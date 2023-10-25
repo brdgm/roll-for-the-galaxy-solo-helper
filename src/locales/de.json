@@ -1,0 +1,33 @@
+{
+  "gameTitle": "Roll for the Galaxy",
+  "home": {
+    "title": "Roll for the Galaxy Solo Helper",
+    "play1": "Spiele den <a href='https://boardgamegeek.com/filepage/124323/solo-rules-rftg-amibtion' target='_blank' rel='noopener'><b>Solo-Modus</b></a> (von Ken Thibodeau, inoffiziell) mit <a href='https://boardgamegeek.com/boardgame/132531/roll-galaxy' target='_blank' rel='noopener'><b>Roll for the Galaxy</b></a>.",
+    "play2": "Du kannst mit dem Grundspiel spielen, oder die zusäztlichen Plättchen und Würfel der Erweiterungen <i>Der große Traum</i> und <i>Große Konkurrenz</i> hinzufügen. Von den optionalen Modulen wird nur das <i>Aufgaben</i>-Moduls aus <i>Der große Traum</i> unterstützt.",
+    "feedback": "Discussion and Feedback:"
+  },
+  "notfound": {
+    "title": "Nicht gefunden"
+  },
+  "action": {
+    "playGame": "Spielen",
+    "startGame": "Spiel starten",
+    "next": "Weiter",
+    "nextRound": "Nächste Runde",
+    "abortGame": "Spiel abbrechen",
+    "abortGameConfirm": "Das aktuelle Spiel wird abgebrochen - bist Du sicher?",
+    "endGame": "Spiel beenden",
+    "endGameConfirm": "Dieses Spiel wird beendet - bist Du sicher?",
+    "cancel": "Abbrechen",
+    "backToHome": "Zurück zum Anfang",
+    "back": "Zurück",
+    "close": "Schließen"
+  },
+  "footer": {
+    "credits": "Credits"
+  },
+  "serviceWorkerUpdatedRefresh": {
+    "title": "Applikation neu laden",
+    "notice": "Die Applikation wurde aktualisiert - möchtest du die Seite neu laden um die neueste Version zu nutzen?"
+  }
+}

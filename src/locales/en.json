@@ -6,6 +6,34 @@
     "play2": "You can play with the base game, or with all the additional tiles and dice from the expansion <i>Ambition</i> or <i>Rivalry</i>. From the optional modules, only the <i>Objectives</i> module from the <i>Ambition</i> expansion is supported.",
     "feedback": "Discussion and Feedback:"
   },
+  "setup": {
+    "title": "Setup Game",
+    "modules": {
+      "title": "Modules",
+      "objective": "Objective Module (<i>Ambition</i> expansion)"
+    },
+    "difficultyLevel": {
+      "title": "Difficulty Level",
+      "easy": "Easy",
+      "hard": "Hard"
+    },
+    "objectiveDifficultyLevel": {
+      "title": "Difficulty Level for Objectives",
+      "easy": "Easy",
+      "hard": "Hard"
+    }
+  },
+  "difficultyLevel": {
+    "1": "Level 1 - Normal",
+    "2": "Level 2 - Advanced",
+    "3": "Level 3 - Expert",
+    "4": "Level 4 - Professional"
+  },
+  "objectiveDifficultyLevel": {
+    "1": "Normal (1 out of 10 probability to fulfill an objective)",
+    "2": "Hard (1 out of 8 probability to fulfill an objective)",
+    "3": "Insane (1 out of 6 probability to fulfill an objective)"
+  },
   "notfound": {
     "title": "Not Found"
   },

@@ -6,6 +6,34 @@
     "play2": "Du kannst mit dem Grundspiel spielen, oder die zusäztlichen Plättchen und Würfel der Erweiterungen <i>Der große Traum</i> und <i>Große Konkurrenz</i> hinzufügen. Von den optionalen Modulen wird nur das <i>Aufgaben</i>-Moduls aus <i>Der große Traum</i> unterstützt.",
     "feedback": "Discussion and Feedback:"
   },
+  "setup": {
+    "title": "Spielaufbau",
+    "modules": {
+      "title": "Module",
+      "objective": "Aufgaben-Modul (<i>Der große Traum</i>-Erweiterung)"
+    },
+    "difficultyLevel": {
+      "title": "Schwierigkeitsgrad",
+      "easy": "Leicht",
+      "hard": "Schwer"
+    },
+    "objectiveDifficultyLevel": {
+      "title": "Schwierigkeitsgrad für Aufgaben",
+      "easy": "Leicht",
+      "hard": "Schwer"
+    }
+  },
+  "difficultyLevel": {
+    "1": "Level 1 - Normal",
+    "2": "Level 2 - Fortgeschritten",
+    "3": "Level 3 - Experte",
+    "4": "Level 4 - Profi"
+  },
+  "objectiveDifficultyLevel": {
+    "1": "Normal (1 aus 10-Wahrscheinlichkeit eine Aufgabe zu erfüllen)",
+    "2": "Schwer (1 aus 8-Wahrscheinlichkeit eine Aufgabe zu erfüllen)",
+    "3": "Wahnwitzig (1 aus 6-Wahrscheinlichkeit eine Aufgabe zu erfüllen)"
+  },
   "notfound": {
     "title": "Nicht gefunden"
   },

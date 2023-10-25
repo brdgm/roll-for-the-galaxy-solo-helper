@@ -1,6 +1,7 @@
 import { RouteRecordRaw } from 'vue-router'
 import AppHome from '@/views/AppHome.vue'
 import NotFound from '@/views/NotFound.vue'
+import SetupGame from '@/views/SetupGame.vue'
 import createRouter from 'brdgm-commons/src/util/router/createRouter'
 import { name } from '@/../package.json'
 
@@ -11,6 +12,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/',
     name: 'AppHome',
     component: AppHome
+  },
+  {
+    path: '/setupGame',
+    name: 'SetupGame',
+    component: SetupGame
   },
   {
     path: '/:pathMatch(.*)*',

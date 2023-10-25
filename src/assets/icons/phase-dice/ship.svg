@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 13.78 13.78">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: .5px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-5 {
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke-width: .6px;
+      }
+
+      .cls-3, .cls-6, .cls-7 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        stroke-width: .81px;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        fill: #231f20;
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-5 {
+        stroke-width: .63px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-3" width="13.78" height="13.78"/>
+    </clipPath>
+  </defs>
+  <g class="cls-8">
+    <path class="cls-7" d="m2.93,1.94h7.22c.93,0,1.68.75,1.68,1.68v7.22c0,.93-.75,1.68-1.68,1.68H2.93c-.93,0-1.68-.75-1.68-1.68V3.63c0-.93.75-1.68,1.68-1.68Z"/>
+    <path class="cls-1" d="m2.93,1.94h7.22c.93,0,1.68.75,1.68,1.68v7.22c0,.93-.75,1.68-1.68,1.68H2.93c-.93,0-1.68-.75-1.68-1.68V3.63c0-.93.75-1.68,1.68-1.68Z"/>
+    <path class="cls-6" d="m3.58,1.3h7.22c.93,0,1.68.75,1.68,1.68v7.22c0,.93-.75,1.68-1.68,1.68H3.58c-.93,0-1.68-.75-1.68-1.68V2.98c0-.93.75-1.68,1.68-1.68Z"/>
+    <path class="cls-2" d="m3.58,1.3h7.22c.93,0,1.68.75,1.68,1.68v7.23c0,.93-.75,1.68-1.68,1.68H3.57c-.93,0-1.68-.75-1.68-1.68V2.98c0-.93.75-1.68,1.68-1.68Z"/>
+    <path class="cls-5" d="m5.9,6.59s-1.29-.64-2.26.32c1.61-1.61,3.22-1.29,3.22-1.29"/>
+    <path class="cls-4" d="m5.9,7.88l-.65-.64,2.26-2.26c1.61-1.61,3.22-1.93,3.22-1.93"/>
+    <path class="cls-5" d="m7.19,7.88s.64,1.29-.32,2.26c1.61-1.61,1.29-3.22,1.29-3.22"/>
+    <path class="cls-4" d="m5.9,7.88l.64.65s.64-.65,2.26-2.26c1.61-1.61,1.93-3.22,1.93-3.22"/>
+  </g>
+</svg>

@@ -43,22 +43,7 @@ export default defineComponent({
 })
 </script>
 
-<style>
-a[href='#peterParlerModal'] {
-  color: #000;
-  text-decoration: underline dotted;
-}
-</style>
 <style lang="scss" scoped>
-#peterParlerModal {
-  img {
-    width: 150px;
-    border-radius: 75px;
-    float: right;
-    margin: 15px;
-    filter: drop-shadow(5px 5px 5px #aaa)
-  }
-}
 .disclaimer {
   clear: both;
   margin-top: 4rem;

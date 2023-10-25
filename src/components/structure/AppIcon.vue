@@ -15,15 +15,19 @@ export default defineComponent({
     name: {
       type: String,
       required: true
+    },
+    extension: {
+      type: String,
+      default: 'png'
     }
   },
   computed: {
     imageUrl() : string {
       if (this.type) {
-        return new URL(`/src/assets/icons/${this.type}/${this.name}.png`, import.meta.url).toString()
+        return new URL(`/src/assets/icons/${this.type}/${this.name}.${this.extension}`, import.meta.url).toString()
       }
       else {
-        return new URL(`/src/assets/icons/${this.name}.png`, import.meta.url).toString()
+        return new URL(`/src/assets/icons/${this.name}.${this.extension}`, import.meta.url).toString()
       }
     }
   }

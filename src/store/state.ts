@@ -3,6 +3,7 @@ import { name } from '@/../package.json'
 import DifficultyLevel from '@/services/enum/DifficultyLevel'
 import ObjectiveDifficultyLevel from '@/services/enum/ObjectiveDifficultyLevel'
 import Module from '@/services/enum/Module'
+import Phase from '@/services/enum/Phase'
 
 export const useStateStore = defineStore(`${name}.state`, {
   state: () => {
@@ -42,4 +43,6 @@ export interface Setup {
 }
 export interface Round {
   round: number
+  playerPhase: Phase
+  botPhases: Phase[]
 }

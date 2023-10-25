@@ -23,6 +23,12 @@
       "hard": "Hard"
     }
   },
+  "roundPhaseSelection": {
+    "title": "Round {round}",
+    "pickPhase": "Pick your selected phase.",
+    "playerSelected": "Player selected:",
+    "botSelected": "Bot selected:"
+  },
   "difficultyLevel": {
     "1": "Level 1 - Normal",
     "2": "Level 2 - Advanced",

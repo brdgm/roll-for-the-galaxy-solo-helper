@@ -4,7 +4,7 @@ import Phase from './enum/Phase';
 /**
  * Selects phases for the bot.
  */
-export default class PhaseSelector {
+export default class BotPhaseSelector {
 
   /**
    * Select two distinct random phases.

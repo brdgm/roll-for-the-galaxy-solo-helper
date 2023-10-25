@@ -1,4 +1,4 @@
-import PhaseSelector from '@/services/PhaseSelector'
+import PhaseSelector from '@/services/BotPhaseSelector'
 import { expect } from 'chai'
 
 describe('services/PhaseSelector', () => {

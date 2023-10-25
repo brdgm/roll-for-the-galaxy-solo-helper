@@ -29,6 +29,9 @@
     "playerSelected": "Player selected:",
     "botSelected": "Bot selected:"
   },
+  "roundPhaseExecution": {
+    "title": "Round {round}"
+  },
   "difficultyLevel": {
     "1": "Level 1 - Normal",
     "2": "Level 2 - Advanced",

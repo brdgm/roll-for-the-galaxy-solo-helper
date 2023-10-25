@@ -1,5 +1,5 @@
 <template>
-  <h1>{{t('roundPhaseSelection.title', {round:round})}}</h1>
+  <h1>{{t('roundPhaseSelection.title', {round})}}</h1>
 
   <PhaseSelection :navigationState="navigationState" @selected="phasesSelected"/>
 
@@ -7,7 +7,7 @@
     {{t('action.next')}}
   </button>
 
-  <FooterButtons endGameButtonType="abortGame"/>
+  <FooterButtons :backButtonRouteTo="backButtonRouteTo" endGameButtonType="abortGame"/>
 </template>
 
 <script lang="ts">
@@ -18,6 +18,7 @@ import { useRoute } from 'vue-router'
 import { useStateStore } from '@/store/state'
 import PhaseSelection from '@/components/round/PhaseSelection.vue'
 import NavigationState from '@/util/NavigationState'
+import getSelectedPhases from '@/util/getSelectedPhases'
 import Phase from '@/services/enum/Phase'
 
 export default defineComponent({
@@ -39,9 +40,18 @@ export default defineComponent({
       selectedPhasesStored: false
     }
   },
+  computed: {
+    backButtonRouteTo() {
+      const previousRoundData = this.state.rounds.find(item => item.round == this.round - 1)
+      if (previousRoundData) {
+        return `/round/${previousRoundData.round}/phase/${getSelectedPhases(previousRoundData).length}`
+      }
+      return undefined
+    }
+  },
   methods: {
     next() : void {
-      this.$router.push(`/round/${this.round + 1}`)
+      this.$router.push(`/round/${this.round}/phase/1`)
     },
     phasesSelected(playerPhase: Phase, botPhases: Phase[]) : void {
       this.state.storeRound({round: this.round, playerPhase, botPhases})

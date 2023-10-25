@@ -43,7 +43,7 @@ export default defineComponent({
     }
   },
   emits: {
-    selected: (playerPhase: Phase, botPhases: Phase[]) => true  // eslint-disable-line @typescript-eslint/no-unused-vars
+    selected: (_playerPhase: Phase, _botPhases: Phase[]) => true  // eslint-disable-line @typescript-eslint/no-unused-vars
   },
   setup() {
     const { t } = useI18n();

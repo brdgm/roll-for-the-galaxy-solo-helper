@@ -59,6 +59,13 @@
       "tradeValue": "Trade value",
       "botConsumes": "Bot consumes",
       "vps": "VPs"
+    },
+    "gainObjectiveActions": {
+      "gainObjective": "Bot completed an <b>unclaimed objective</b>!",
+      "pickObjective": "Pick objective tile",
+      "tilesLeft": "How many objective tiles are left?",
+      "tiles": "tiles",
+      "picksTile": "Bot picks tile number <b>{tile}</b> and gains talent counters accordingly."
     }
   },
   "endGameScoring": {

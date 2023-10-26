@@ -59,6 +59,13 @@
       "tradeValue": "Handelsertrag",
       "botConsumes": "Bot verbraucht",
       "vps": "VPs"
+    },
+    "gainObjectiveActions": {
+      "gainObjective": "Bot hat eine der <b>verfügbaren Aufgaben</b> erfüllt!",
+      "pickObjective": "Aufgabentafel wählen",
+      "tilesLeft": "Wie viele Aufgabentafeln sind übrig?",
+      "tiles": "Tafeln",
+      "picksTile": "Bot wählt Aufgabentafel Nummer <b>{tile}</b> und erählt die entsprechenden Leistungsmarker."
     }
   },
   "endGameScoring": {

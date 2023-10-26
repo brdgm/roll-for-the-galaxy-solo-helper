@@ -8,7 +8,8 @@
     <component :is="`${selectedBotPhase}Actions`"
         :phase="selectedBotPhase"
         :chosenPhase="isChosenPhase(navigationState.selectedPhase)"
-        :navigationState="navigationState"/>   
+        :navigationState="navigationState"/>
+    <GainObjectiveActions v-if="isLastPhase"/> 
   </div>
 
   <button class="btn btn-success btn-lg mt-4" @click="completed()">
@@ -32,6 +33,7 @@ import DevelopActions from './action/DevelopActions.vue'
 import SettleActions from './action/SettleActions.vue'
 import ProduceActions from './action/ProduceActions.vue'
 import ShipActions from './action/ShipActions.vue'
+import GainObjectiveActions from './action/GainObjectiveActions.vue'
 import getAlternativeBotPhase from '@/util/getAlternativeBotPhase'
 
 export default defineComponent({
@@ -42,7 +44,8 @@ export default defineComponent({
     DevelopActions,
     SettleActions,
     ProduceActions,
-    ShipActions
+    ShipActions,
+    GainObjectiveActions
   },
   emits: ['next'],
   props: {
@@ -73,6 +76,10 @@ export default defineComponent({
         return this.alternativeBotPhase
       }
       return this.navigationState.selectedPhase ?? Phase.EXPLORE
+    },
+    isLastPhase() : boolean {
+      const lastPhase = this.navigationState.selectedPhases[this.navigationState.selectedPhases.length - 1]
+      return this.navigationState.selectedPhase == lastPhase
     }
   },
   methods: {

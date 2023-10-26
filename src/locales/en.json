@@ -1,0 +1,125 @@
+{
+  "gameTitle": "Roll for the Galaxy",
+  "home": {
+    "title": "Roll for the Galaxy Solo Helper",
+    "play1": "Play the <a href='https://boardgamegeek.com/filepage/124323/solo-rules-rftg-amibtion' target='_blank' rel='noopener'><b>Solo Mode</b></a> (by Ken Thibodeau, unofficial) with <a href='https://boardgamegeek.com/boardgame/132531/roll-galaxy' target='_blank' rel='noopener'><b>Roll for the Galaxy</b></a>.",
+    "play2": "You can play with the base game, or with all the additional tiles and dice from the expansion <i>Ambition</i> or <i>Rivalry</i>. From the optional modules, only the <i>Objectives</i> module from the <i>Ambition</i> expansion is supported.",
+    "feedback": "Discussion and Feedback:"
+  },
+  "setup": {
+    "title": "Setup Game",
+    "modules": {
+      "title": "Modules",
+      "objective": "Objective Module (<i>Ambition</i> expansion)"
+    },
+    "difficultyLevel": {
+      "title": "Difficulty Level",
+      "easy": "Easy",
+      "hard": "Hard"
+    },
+    "objectiveDifficultyLevel": {
+      "title": "Difficulty Level for Objectives",
+      "easy": "Easy",
+      "hard": "Hard"
+    }
+  },
+  "roundPhaseSelection": {
+    "title": "Round {round}",
+    "pickPhase": "Pick your selected phase.",
+    "playerSelected": "Player:",
+    "botSelected": "Bot:"
+  },
+  "roundPhaseExecution": {
+    "title": "Round {round}",
+    "botActions": "Bot actions:",
+    "completed": "Bot actions completed",
+    "notPossible": "Not possible",
+    "exploreActions": {
+      "drawTile": "Bot <b>draws 1 tile</b>, places it as either a world or development at the bottom of whichever construction zone stack is the shortest. Place tile as a world in case of a tie.",
+      "earnMoney": "Bot <b>earns ${amount}.</b>"
+    },
+    "developActions": {
+      "completeDevelopment": "Bot <b>completes the top development</b> if he has enough credits to pay for it.",
+      "notes": "Bot spends credits instead of workers. Bot will <i>never benefit from any bonus</i> earned through developments. They will only serve as VPs at game end."
+    },
+    "settleActions": {
+      "completeWorld": "Bot <b>completes his topmost world</b> by paying an amount of credits equal to the world’s value, if he has enough.",
+      "notes": "Bot spends credits instead of workers. Bot will never <i>gain new dice</i> and <i>never benefit from any bonus</i> through worlds. They will only serve as VPs at game end."
+    },
+    "produceActions": {
+      "produceWorlds": "Bot <b>produces on his {amount} highest color</b> value available world. | Bot <b>produces on his {amount} highest color</b> value available worlds.",
+      "priority": "Priority:",
+      "notes": "Use any die from the supply to serve as the produced good."
+    },
+    "shipActions": {
+      "tradeFirst": "Bot first <b>trades the good from the highest color</b> value world for credits (up to the maximum 10$).",
+      "consumeNext": "Bot then <b>consumes the good from the next highest color</b> value world (if available) to gain VPs. If Bot already has $10, he consumes twice.",
+      "tradeOnly": "Bot <b>trades the good from the highest color</b> value world for credits (up to the maximum 10$). If Bot already has $10, he consumes the good from the next highest color value world instead, or any good he has.",
+      "priority": "Priority",
+      "tradeValue": "Trade value",
+      "botConsumes": "Bot consumes",
+      "vps": "VPs"
+    },
+    "gainObjectiveActions": {
+      "gainObjective": "Bot completed an <b>unclaimed objective</b>!",
+      "pickObjective": "Pick objective tile",
+      "tilesLeft": "How many objective tiles are left?",
+      "tiles": "tiles",
+      "picksTile": "Bot picks tile number <b>{tile}</b> and gains talent counters accordingly."
+    }
+  },
+  "endGameScoring": {
+    "title": "End of Game",
+    "player": "Player",
+    "bot": "Bot",
+    "vpChips": "VP Chips",
+    "vpDevelopmentWorld": "Developments/Worlds",
+    "vp6PlusWorlds": "6+ World Bonus",
+    "talentCounters": "Talent Counters",
+    "total": "Total",
+    "vps": "VPs",
+    "difficulityLevel": "Difficulty:",
+    "objectiveDifficultyLevel": "Objectives:"
+  },
+  "difficultyLevel": {
+    "1": "Level 1 - Normal",
+    "2": "Level 2 - Advanced",
+    "3": "Level 3 - Expert",
+    "4": "Level 4 - Professional"
+  },
+  "difficultyLevelExplanation": {
+    "1": "Consume goods for 2/2/3/3 VPs",
+    "2": "Consume goods for 2/3/4/5 VPs",
+    "3": "Consume goods for 3/4/5/6 VPs",
+    "4": "Consume goods for 3/4/5/6 VPs, take 6+ scoring into account"
+  },
+  "objectiveDifficultyLevel": {
+    "1": "Normal (1 out of 10 probability to fulfill an objective)",
+    "2": "Hard (1 out of 8 probability to fulfill an objective)",
+    "3": "Insane (1 out of 6 probability to fulfill an objective)"
+  },
+  "notfound": {
+    "title": "Not Found"
+  },
+  "action": {
+    "playGame": "Play Game",
+    "startGame": "Start Game",
+    "next": "Next",
+    "nextRound": "Next Round",
+    "abortGame": "Abort Game",
+    "abortGameConfirm": "Aborting the running game - are you sure?",
+    "endGame": "End Game",
+    "endGameConfirm": "End this game and return to home screen - are you sure?",
+    "cancel": "Cancel",
+    "backToHome": "Back to Home",
+    "back": "Back",
+    "close": "Close"
+  },
+  "footer": {
+    "credits": "Credits"
+  },
+  "serviceWorkerUpdatedRefresh": {
+    "title": "Refresh Application",
+    "notice": "The application was updated - do you want to refresh to use the latest version?"
+  }
+}

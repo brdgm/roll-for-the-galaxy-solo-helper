@@ -1,6 +1,14 @@
 <template>
   <h1>{{t('setup.title')}}</h1>
 
+  <h3 class="mt-4 mb-3">{{t('setup.general.title')}}</h3>
+  <ul>
+    <li v-html="t('setup.general.setup2Players')"></li>
+    <li v-html="t('setup.general.botPlayerMat')"></li>
+    <li v-html="t('setup.general.botNoHomeWorld')"></li>
+    <li v-html="t('setup.general.botDrawTiles')"></li>
+  </ul>
+
   <ModuleSetup/>
   <DifficultyLevel/>
   <ObjectiveDifficultyLevel v-if="hasObjectiveModule"/>

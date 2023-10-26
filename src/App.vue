@@ -33,7 +33,7 @@
         <dt>Graphics design</dt>
         <dd>Martin Hoffmann, Claus Stephan, Mirko Suzuki</dd>
         <dt><a href="https://boardgamegeek.com/filepage/124323/solo-rules-rftg-amibtion" target="_blank" rel="noopener">Solo Mode Design (unofficial)</a></dt>
-        <dd>Ken Thibodeau</dd>
+        <dd>Dale Buonocore, Ken Thibodeau</dd>
         <dt>Publisher</dt>
         <dd><a href="https://www.riograndegames.com/" target="_blank" rel="noopener">Rio Grande Games</a></dd>
       </dl>

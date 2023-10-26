@@ -12,6 +12,7 @@ export default class NavigationState {
   readonly selectedPhases : Phase[]
   readonly selectedPhase : Phase|undefined
   readonly botPhases : Phase[]
+  readonly objectiveGain : boolean
 
   constructor(route : RouteLocation, state : State) {    
     this.difficultyLevel = state.setup.difficultyLevel
@@ -24,11 +25,13 @@ export default class NavigationState {
       this.selectedPhases = getSelectedPhases(roundData)
       this.selectedPhase = this.selectedPhases[this.phase - 1]
       this.botPhases = roundData.botPhases
+      this.objectiveGain = roundData.objectiveGain ?? false
     }
     else {
       this.selectedPhases = []
       this.selectedPhase = undefined
       this.botPhases = []
+      this.objectiveGain = false
     }
   }
 

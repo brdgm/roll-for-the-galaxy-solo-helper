@@ -9,7 +9,7 @@
         :phase="selectedBotPhase"
         :chosenPhase="isChosenPhase(navigationState.selectedPhase)"
         :navigationState="navigationState"/>
-    <GainObjectiveActions v-if="isLastPhase"/> 
+    <GainObjectiveActions v-if="isLastPhase && navigationState.objectiveGain"/> 
   </div>
 
   <button class="btn btn-success btn-lg mt-4" @click="completed()">

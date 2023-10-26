@@ -45,4 +45,5 @@ export interface Round {
   round: number
   playerPhase: Phase
   botPhases: Phase[]
+  objectiveGain?: boolean
 }

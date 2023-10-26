@@ -15,11 +15,13 @@ import { defineComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
 import FooterButtons from '@/components/structure/FooterButtons.vue'
 import { useRoute } from 'vue-router'
-import { useStateStore } from '@/store/state'
+import { Round, useStateStore } from '@/store/state'
 import PhaseSelection from '@/components/round/PhaseSelection.vue'
 import NavigationState from '@/util/NavigationState'
 import getSelectedPhases from '@/util/getSelectedPhases'
 import Phase from '@/services/enum/Phase'
+import ObjectiveDifficultyLevel from '@/services/enum/ObjectiveDifficultyLevel'
+import rollDice from 'brdgm-commons/src/util/random/rollDice'
 
 export default defineComponent({
   name: 'RoundPhaseSelection',
@@ -54,7 +56,29 @@ export default defineComponent({
       this.$router.push(`/round/${this.round}/phase/1`)
     },
     phasesSelected(playerPhase: Phase, botPhases: Phase[]) : void {
-      this.state.storeRound({round: this.round, playerPhase, botPhases})
+      const round : Round = {round: this.round, playerPhase, botPhases}
+
+      // check if objective is gained - limit to max. 2
+      const gainedObjectives = this.state.rounds.filter(item => item.round < this.round && item.objectiveGain).length
+      if (gainedObjectives < 2) {
+        let objectiveDice
+        switch (this.state.setup.objectiveDifficultyLevel) {
+          case ObjectiveDifficultyLevel.HARD_D8:
+            objectiveDice = 8
+            break
+          case ObjectiveDifficultyLevel.INSANE_D6:
+            objectiveDice = 6
+            break
+          default:
+            objectiveDice = 10
+            break
+        }
+        if (rollDice(objectiveDice) == 1) {
+          round.objectiveGain = true
+        }
+      }
+
+      this.state.storeRound(round)
       this.selectedPhasesStored = true
     }
   }

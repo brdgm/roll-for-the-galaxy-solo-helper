@@ -1,11 +1,11 @@
 <template>
   <ul v-if="chosenPhase">
-    <li>Bot <b>draws 1 tile</b>, places it as either a world or development at the bottom of whichever construction zone stack is the shortest. Place tile as a world in case of a tie.</li>
-    <li>Bot <b>earns $2.</b></li>
+    <li v-html="t('roundPhaseExecution.exploreActions.drawTile')"></li>
+    <li v-html="t('roundPhaseExecution.exploreActions.earnMoney', {amount:2})"></li>
   </ul>
   <ul v-else>
-    <li>Bot <b>draws 1 tile</b>, places it as either a world or development at the bottom of whichever construction zone stack is the shortest. Place tile as a world in case of a tie.</li>
-    <li>Bot <b>earns $1.</b></li>
+    <li v-html="t('roundPhaseExecution.exploreActions.drawTile')"></li>
+    <li v-html="t('roundPhaseExecution.exploreActions.earnMoney', {amount:1})"></li>
   </ul>
 </template>
 

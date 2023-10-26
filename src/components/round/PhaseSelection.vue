@@ -46,9 +46,9 @@ export default defineComponent({
     selected: (_playerPhase: Phase, _botPhases: Phase[]) => true  // eslint-disable-line @typescript-eslint/no-unused-vars
   },
   setup() {
-    const { t } = useI18n();
-    const state = useStateStore();
-    return { t, state };
+    const { t } = useI18n()
+    const state = useStateStore()
+    return { t, state }
   },
   data() {
     return {
@@ -58,7 +58,7 @@ export default defineComponent({
   },
   computed: {
     allPhases(): Phase[] {
-      return Object.values(Phase);
+      return Object.values(Phase)
     }
   },
   methods: {

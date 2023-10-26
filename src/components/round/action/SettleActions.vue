@@ -1,8 +1,8 @@
 <template>
   <ul>
-    <li>Bot completes his topmost world by paying an amount of credits equal to the world’s value, if he has enough.</li>
+    <li v-html="t('roundPhaseExecution.settleActions.completeWorld')"></li>
   </ul>
-  <p>Bot will never <i>gain new dice</i> and <i>never benefit from any bonus</i> through worlds.</p>
+  <p v-html="t('roundPhaseExecution.settleActions.notes')"></p>
 </template>
 
 <script lang="ts">

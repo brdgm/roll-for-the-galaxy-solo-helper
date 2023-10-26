@@ -1,8 +1,8 @@
 <template>
   <ul>
-    <li>Bot <b>completes the top development</b> if he has enough credits to pay for it.</li>
+    <li v-html="t('roundPhaseExecution.developActions.completeDevelopment')"></li>
   </ul>
-  <p>Bot will <i>never benefit from any bonus</i> earned through developments. They will only serve as VPs at game end.</p>
+  <p v-html="t('roundPhaseExecution.developActions.notes')"></p>
 </template>
 
 <script lang="ts">

@@ -4,7 +4,7 @@
       <AppIcon type="phase" :name="phase" class="phaseIcon"
           :class="{active:isActive(phase),inactive:!isActive(phase)}"/>
     </div>
-    <p>Bot Actions:</p>
+    <p>{{t('roundPhaseExecution.botActions')}}</p>
     <component :is="`${navigationState.selectedPhase}Actions`"
         :phase="navigationState.selectedPhase"
         :chosenPhase="isChosenPhase(navigationState.selectedPhase)"
@@ -42,9 +42,9 @@ export default defineComponent({
     }
   },
   setup() {
-    const { t } = useI18n();
-    const state = useStateStore();
-    return { t, state };
+    const { t } = useI18n()
+    const state = useStateStore()
+    return { t, state }
   },
   computed: {
     allPhases(): Phase[] {

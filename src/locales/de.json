@@ -61,6 +61,19 @@
       "vps": "VPs"
     }
   },
+  "endGameScoring": {
+    "title": "Spielende",
+    "player": "Spieler",
+    "bot": "Bot",
+    "vpChips": "SP-Chips",
+    "vpDevelopmentWorld": "Entwicklungen/Welten",
+    "vp6PlusWorlds": "6+ Welt-Bonus",
+    "talentCounters": "Leistungsmarker",
+    "total": "Summe",
+    "vps": "SPs",
+    "difficulityLevel": "Schwierigkeitsgrad:",
+    "objectiveDifficultyLevel": "Aufgaben:"
+  },
   "difficultyLevel": {
     "1": "Level 1 - Normal",
     "2": "Level 2 - Fortgeschritten",

@@ -61,6 +61,19 @@
       "vps": "VPs"
     }
   },
+  "endGameScoring": {
+    "title": "End of Game",
+    "player": "Player",
+    "bot": "Bot",
+    "vpChips": "VP Chips",
+    "vpDevelopmentWorld": "Developments/Worlds",
+    "vp6PlusWorlds": "6+ World Bonus",
+    "talentCounters": "Talent Counters",
+    "total": "Total",
+    "vps": "VPs",
+    "difficulityLevel": "Difficulty:",
+    "objectiveDifficultyLevel": "Objectives:"
+  },
   "difficultyLevel": {
     "1": "Level 1 - Normal",
     "2": "Level 2 - Advanced",

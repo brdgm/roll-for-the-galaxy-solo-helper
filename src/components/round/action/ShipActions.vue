@@ -6,9 +6,9 @@
   <ul v-else>
     <li v-html="t('roundPhaseExecution.shipActions.tradeOnly')"></li>
   </ul>
-  <table>
+  <table aria-describedby="priorityCaption">
     <tr>
-      <th>{{t('roundPhaseExecution.shipActions.priority')}}</th>
+      <th id="priorityCaption">{{t('roundPhaseExecution.shipActions.priority')}}</th>
       <td v-for="(produceDiceType, index) of produceDiceTypes" :key="produceDiceType">
         <AppIcon type="produce-dice" :name="produceDiceType" extension="svg" class="diceIcon" />
         <span v-if="index < produceDiceTypes.length - 1"> &nbsp;>&nbsp;</span>
@@ -85,8 +85,6 @@ export default defineComponent({
 table {
   th {
     padding-right: 20px;
-  }
-  th {
     font-weight: normal;
   }
 }

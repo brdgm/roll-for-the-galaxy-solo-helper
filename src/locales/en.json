@@ -52,7 +52,7 @@
     "shipActions": {
       "tradeFirst": "Bot first <b>trades the good from the highest color</b> value world for credits (up to the maximum 10$).",
       "consumeNext": "Bot then <b>consumes the good from the next highest color</b> value world (if available) to gain VPs. If Bot already has $10, he consumes twice.",
-      "tradeOnly": "Bot <b>trades the good from the highest color</b> value world for credits (up to the maximum 10$). If Bot already has $10, he consumes the good from the next highest color value world instead.",
+      "tradeOnly": "Bot <b>trades the good from the highest color</b> value world for credits (up to the maximum 10$). If Bot already has $10, he consumes the good from the next highest color value world instead, or any good he has.",
       "priority": "Priority",
       "tradeValue": "Trade value",
       "botConsumes": "Bot consumes",

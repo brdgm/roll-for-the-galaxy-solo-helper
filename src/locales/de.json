@@ -51,8 +51,8 @@
     },
     "shipActions": {
       "tradeFirst": "Bot <b>handelt ein Gut von der wertvollsten Welt</b> gegen Krediteinheiten (bis zum Maximum von 10$).",
-      "consumeNext": "Anschließend <b>verbraucht er das Gut von der nächst-wertvollsten Welt</b> (wenn verfügbar) für Siegpunkte. Wenn Bot bereits $10 hat, verbraucht er zweimal.",
-      "tradeOnly": "Bot <b>trades the good from the highest color</b> value world for credits (up to the maximum 10$). If Bot already has $10, he consumes the good from the next highest color value world instead.",
+      "consumeNext": "Anschließend <b>verbraucht er das Gut von der zweitwertvollsten Welt</b> (wenn verfügbar) für Siegpunkte. Wenn Bot bereits $10 hat, verbraucht er zweimal.",
+      "tradeOnly": "Bot <b>handelt ein Gut von der wertvollsten Welt</b> gegen Krediteinheiten (bis zum Maximum von 10$). Wenn Bot bereits $10 hat, verbraucht er anstelle ein Gut von der zweitwertvollsten Welt bzw. irgendein verfügbares Gut.",
       "priority": "Priorität",
       "tradeValue": "Handelsertrag",
       "botConsumes": "Bot verbraucht",

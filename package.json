@@ -1,6 +1,6 @@
 {
   "name": "@brdgm/roll-for-the-galaxy-solo-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Roll for the Galaxy Solo Helper",
   "appDeployName": "roll-for-the-galaxy",

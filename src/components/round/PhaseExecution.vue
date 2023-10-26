@@ -72,7 +72,7 @@ export default defineComponent({
       if (this.alternativeBotPhase) {
         return this.alternativeBotPhase
       }
-      return this.navigationState.selectedPhase || Phase.EXPLORE
+      return this.navigationState.selectedPhase ?? Phase.EXPLORE
     }
   },
   methods: {

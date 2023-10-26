@@ -11,13 +11,11 @@
   <p v-html="t('home.play1')"></p>
   <p v-html="t('home.play2')"></p>
 
-<!--
   <p class="text-muted fst-italic">
     {{t('home.feedback')}}
-    <a href="https://boardgamegeek.com/thread/XXX" target="_blank" rel="noopener">Board Game Geek Thread</a> |
+    <a href="https://boardgamegeek.com/thread/3178925/brdgmme-roll-galaxy-solo-helper-web-application" target="_blank" rel="noopener">Board Game Geek Thread</a> |
     <a href="https://github.com/brdgm/roll-for-the-galaxy-solo-helper" target="_blank" rel="noopener">GitHub</a>
   </p>
--->
 
   <router-link to="/setupGame" class="btn btn-primary btn-lg mt-3">{{t('action.playGame')}}</router-link>
 

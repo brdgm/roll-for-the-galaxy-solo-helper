@@ -2,7 +2,7 @@
   "gameTitle": "Roll for the Galaxy",
   "home": {
     "title": "Roll for the Galaxy Solo Helper",
-    "play1": "Play <a href='https://boardgamegeek.com/boardgame/132531/roll-galaxy' target='_blank' rel='noopener'><b>Roll for the Galaxy</b></a> against a Bot with the unofficial <a href='https://boardgamegeek.com/filepage/124323/solo-rules-rftg-amibtion' target='_blank' rel='noopener'><b>Solo Mode</b></a> by Ken Thibodeau.",
+    "play1": "Play <a href='https://boardgamegeek.com/boardgame/132531/roll-galaxy' target='_blank' rel='noopener'><b>Roll for the Galaxy</b></a> against a Bot with the unofficial <a href='https://boardgamegeek.com/filepage/124323/solo-rules-rftg-amibtion' target='_blank' rel='noopener'><b>Solo Mode</b></a> by Dale Buonocore and Ken Thibodeau.",
     "play2": "You can play with the base game, or with all the additional tiles and dice from the expansion <i>Ambition</i> or <i>Rivalry</i>. From the optional modules, only the <i>Objectives</i> module from the <i>Ambition</i> expansion is supported.",
     "feedback": "Discussion and Feedback:"
   },

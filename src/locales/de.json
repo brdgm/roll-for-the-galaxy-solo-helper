@@ -26,12 +26,14 @@
   "roundPhaseSelection": {
     "title": "Runde {round}",
     "pickPhase": "Markiere die gewählte Phase.",
-    "playerSelected": "Spieler hat gewählt:",
-    "botSelected": "Bot hat gewählt:"
+    "playerSelected": "Spieler:",
+    "botSelected": "Bot:"
   },
   "roundPhaseExecution": {
     "title": "Runde {round}",
     "botActions": "Bot-Aktionen:",
+    "completed": "Bot-Aktionen ausgeführt",
+    "notPossible": "Nicht möglich",
     "exploreActions": {
       "drawTile": "Bot <b>zieht 1 Plättchen</b> und platziert es entweder unter den Stapel der Welten oder Entwicklungen, je nachdem welcher Stapel kleiner ist. Platziere als Welt bei gleich großen Stapeln.",
       "earnMoney": "Bot <b>erhält ${amount}.</b>"

@@ -1,13 +1,9 @@
 <template>
   <h1>{{t('roundPhaseExecution.title', {round, phase})}}</h1>
 
-  <PhaseExecution :navigationState="navigationState"/>
+  <PhaseExecution :navigationState="navigationState" @next="next"/>
 
-  <button class="btn btn-primary btn-lg mt-4" @click="next()">
-    {{t('action.next')}}
-  </button>
-
-  <FooterButtons :backButtonRouteTo="backButtonRouteTo" endGameButtonType="abortGame"/>
+  <FooterButtons :backButtonRouteTo="backButtonRouteTo" :endGameButtonType="round > 1 ? 'endGame' : 'abortGame'"/>
 </template>
 
 <script lang="ts">

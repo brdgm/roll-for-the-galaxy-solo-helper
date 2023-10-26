@@ -7,7 +7,7 @@
     {{t('action.next')}}
   </button>
 
-  <FooterButtons :backButtonRouteTo="backButtonRouteTo" endGameButtonType="abortGame"/>
+  <FooterButtons :backButtonRouteTo="backButtonRouteTo" :endGameButtonType="round > 1 ? 'endGame' : 'abortGame'"/>
 </template>
 
 <script lang="ts">

@@ -1,0 +1,125 @@
+{
+  "gameTitle": "Roll for the Galaxy",
+  "home": {
+    "title": "Roll for the Galaxy Solo Helper",
+    "play1": "Spiele den <a href='https://boardgamegeek.com/filepage/124323/solo-rules-rftg-amibtion' target='_blank' rel='noopener'><b>Solo-Modus</b></a> (von Ken Thibodeau, inoffiziell) mit <a href='https://boardgamegeek.com/boardgame/132531/roll-galaxy' target='_blank' rel='noopener'><b>Roll for the Galaxy</b></a>.",
+    "play2": "Du kannst mit dem Grundspiel spielen, oder die zusäztlichen Plättchen und Würfel der Erweiterungen <i>Der große Traum</i> und <i>Große Konkurrenz</i> hinzufügen. Von den optionalen Modulen wird nur das <i>Aufgaben</i>-Moduls aus <i>Der große Traum</i> unterstützt.",
+    "feedback": "Discussion and Feedback:"
+  },
+  "setup": {
+    "title": "Spielaufbau",
+    "modules": {
+      "title": "Module",
+      "objective": "Aufgaben-Modul (<i>Der große Traum</i>-Erweiterung)"
+    },
+    "difficultyLevel": {
+      "title": "Schwierigkeitsgrad",
+      "easy": "Leicht",
+      "hard": "Schwer"
+    },
+    "objectiveDifficultyLevel": {
+      "title": "Schwierigkeitsgrad für Aufgaben",
+      "easy": "Leicht",
+      "hard": "Schwer"
+    }
+  },
+  "roundPhaseSelection": {
+    "title": "Runde {round}",
+    "pickPhase": "Markiere die gewählte Phase.",
+    "playerSelected": "Spieler:",
+    "botSelected": "Bot:"
+  },
+  "roundPhaseExecution": {
+    "title": "Runde {round}",
+    "botActions": "Bot-Aktionen:",
+    "completed": "Bot-Aktionen ausgeführt",
+    "notPossible": "Nicht möglich",
+    "exploreActions": {
+      "drawTile": "Bot <b>zieht 1 Plättchen</b> und platziert es entweder unter den Stapel der Welten oder Entwicklungen, je nachdem welcher Stapel kleiner ist. Platziere als Welt bei gleich großen Stapeln.",
+      "earnMoney": "Bot <b>erhält ${amount}.</b>"
+    },
+    "developActions": {
+      "completeDevelopment": "Bot <b>stellt seine oberste Entwicklung fertig</b>, wenn er genug Krediteinheiten dafür hat.",
+      "notes": "Bot benötigt keine Entwickler, er zahlt mit Krediteinheiten. Bot <i>ignoriert alle Fähigkeiten und Effekte</i> der Entwicklungen. Die Plättchen zählen nur als Siegpunkte beim Spielende."
+    },
+    "settleActions": {
+      "completeWorld": "Bot <b>stellt seine oberste Welt fertig</b>, wenn er genug Krediteinheiten dafür hat.",
+      "notes": "Bot benötigt keine Siedler, er zahlt mit Krediteinheiten. Bot erhält <i>niemals neue Würfel</i> und profitiert <i>niemals von Soforteffekten</i> der Welten. Die Plättchen zählen nur als Siegpunkte beim Spielende."
+    },
+    "produceActions": {
+      "produceWorlds": "Bot <b>produziert Güter auf seiner {amount} wertvollsten Welt</b>. | Bot <b>produziert Güter auf seinen {amount} wertvollsten Welten</b>.",
+      "priority": "Priorität:",
+      "notes": "Verwende Würfel aus dem Vorrat für die produzierten Güter."
+    },
+    "shipActions": {
+      "tradeFirst": "Bot <b>handelt ein Gut von der wertvollsten Welt</b> gegen Krediteinheiten (bis zum Maximum von 10$).",
+      "consumeNext": "Anschließend <b>verbraucht er das Gut von der zweitwertvollsten Welt</b> (wenn verfügbar) für Siegpunkte. Wenn Bot bereits $10 hat, verbraucht er zweimal.",
+      "tradeOnly": "Bot <b>handelt ein Gut von der wertvollsten Welt</b> gegen Krediteinheiten (bis zum Maximum von 10$). Wenn Bot bereits $10 hat, verbraucht er anstelle ein Gut von der zweitwertvollsten Welt bzw. irgendein verfügbares Gut.",
+      "priority": "Priorität",
+      "tradeValue": "Handelsertrag",
+      "botConsumes": "Bot verbraucht",
+      "vps": "VPs"
+    },
+    "gainObjectiveActions": {
+      "gainObjective": "Bot hat eine der <b>verfügbaren Aufgaben</b> erfüllt!",
+      "pickObjective": "Aufgabentafel wählen",
+      "tilesLeft": "Wie viele Aufgabentafeln sind übrig?",
+      "tiles": "Tafeln",
+      "picksTile": "Bot wählt Aufgabentafel Nummer <b>{tile}</b> und erählt die entsprechenden Leistungsmarker."
+    }
+  },
+  "endGameScoring": {
+    "title": "Spielende",
+    "player": "Spieler",
+    "bot": "Bot",
+    "vpChips": "SP-Chips",
+    "vpDevelopmentWorld": "Entwicklungen/Welten",
+    "vp6PlusWorlds": "6+ Welt-Bonus",
+    "talentCounters": "Leistungsmarker",
+    "total": "Summe",
+    "vps": "SPs",
+    "difficulityLevel": "Schwierigkeitsgrad:",
+    "objectiveDifficultyLevel": "Aufgaben:"
+  },
+  "difficultyLevel": {
+    "1": "Level 1 - Normal",
+    "2": "Level 2 - Fortgeschritten",
+    "3": "Level 3 - Experte",
+    "4": "Level 4 - Profi"
+  },
+  "difficultyLevelExplanation": {
+    "1": "Güter für 2/2/3/3 SPs verbrauchen",
+    "2": "Güter für 2/3/4/5 SPs verbrauchen",
+    "3": "Güter für 3/4/5/6 SPs verbrauchen",
+    "4": "Güter für 3/4/5/6 SPs verbrauchen, 6+-Wertungen berücksichtigen"
+  },
+  "objectiveDifficultyLevel": {
+    "1": "Normal (1 aus 10-Wahrscheinlichkeit eine Aufgabe zu erfüllen)",
+    "2": "Schwer (1 aus 8-Wahrscheinlichkeit eine Aufgabe zu erfüllen)",
+    "3": "Wahnwitzig (1 aus 6-Wahrscheinlichkeit eine Aufgabe zu erfüllen)"
+  },
+  "notfound": {
+    "title": "Nicht gefunden"
+  },
+  "action": {
+    "playGame": "Spielen",
+    "startGame": "Spiel starten",
+    "next": "Weiter",
+    "nextRound": "Nächste Runde",
+    "abortGame": "Spiel abbrechen",
+    "abortGameConfirm": "Das aktuelle Spiel wird abgebrochen - bist Du sicher?",
+    "endGame": "Spiel beenden",
+    "endGameConfirm": "Dieses Spiel wird beendet - bist Du sicher?",
+    "cancel": "Abbrechen",
+    "backToHome": "Zurück zum Anfang",
+    "back": "Zurück",
+    "close": "Schließen"
+  },
+  "footer": {
+    "credits": "Credits"
+  },
+  "serviceWorkerUpdatedRefresh": {
+    "title": "Applikation neu laden",
+    "notice": "Die Applikation wurde aktualisiert - möchtest du die Seite neu laden um die neueste Version zu nutzen?"
+  }
+}

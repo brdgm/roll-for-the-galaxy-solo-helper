@@ -18,7 +18,7 @@
       <td><input type="number" min="0" max="99" step="1" v-model="botVPDevelopmentWorlds" @focus="inputSelectAll"/></td>
     </tr>
     <tr>
-      <th scope="row">{{t('endGameScoring.vp6PlusWorlds')}}</th>
+      <th scope="row">{{t('endGameScoring.vp6PlusBonus')}}</th>
       <td><input type="number" min="0" max="99" step="1" v-model="playerVP6PlusWorlds" @focus="inputSelectAll"/></td>
       <td v-if="isProfessionalDifficultyLevel"><input type="number" min="0" max="99" step="1" v-model="botVP6PlusWorlds" @focus="inputSelectAll"/></td>
       <td v-else></td>
@@ -36,7 +36,7 @@
   </table>
 
   <p class="mt-3">
-    {{t('endGameScoring.difficulityLevel')}} <b>{{t(`difficultyLevel.${state.setup.difficultyLevel}`)}}</b>
+    {{t('endGameScoring.difficultyLevel')}} <b>{{t(`difficultyLevel.${state.setup.difficultyLevel}`)}}</b>
     <span v-if="isObjectivesModule">
       <br/>
       {{t('endGameScoring.objectiveDifficultyLevel')}} <b>{{t(`objectiveDifficultyLevel.${state.setup.objectiveDifficultyLevel}`)}}</b>

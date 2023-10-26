@@ -2,12 +2,19 @@
   "gameTitle": "Roll for the Galaxy",
   "home": {
     "title": "Roll for the Galaxy Solo Helper",
-    "play1": "Spiele den <a href='https://boardgamegeek.com/filepage/124323/solo-rules-rftg-amibtion' target='_blank' rel='noopener'><b>Solo-Modus</b></a> (von Ken Thibodeau, inoffiziell) mit <a href='https://boardgamegeek.com/boardgame/132531/roll-galaxy' target='_blank' rel='noopener'><b>Roll for the Galaxy</b></a>.",
-    "play2": "Du kannst mit dem Grundspiel spielen, oder die zusäztlichen Plättchen und Würfel der Erweiterungen <i>Der große Traum</i> und <i>Große Konkurrenz</i> hinzufügen. Von den optionalen Modulen wird nur das <i>Aufgaben</i>-Moduls aus <i>Der große Traum</i> unterstützt.",
+    "play1": "Spiele <a href='https://boardgamegeek.com/boardgame/132531/roll-galaxy' target='_blank' rel='noopener'><b>Roll for the Galaxy</b></a> gegen einen Bot mit dem inoffiziellen <a href='https://boardgamegeek.com/filepage/124323/solo-rules-rftg-amibtion' target='_blank' rel='noopener'><b>Solo-Modus</b></a> von Ken Thibodeau.",
+    "play2": "Du kannst mit dem Grundspiel spielen, oder die zusätzlichen Plättchen und Würfel der Erweiterungen <i>Der große Traum</i> und <i>Große Konkurrenz</i> hinzufügen. Von den optionalen Modulen wird nur das <i>Aufgaben</i>-Moduls aus <i>Der große Traum</i> unterstützt.",
     "feedback": "Discussion and Feedback:"
   },
   "setup": {
     "title": "Spielaufbau",
+    "general": {
+      "title": "Aufbau",
+      "setup2Players": "Baue das Spiel für 2 Spieler auf.",
+      "botPlayerMat": "Bot benötigt nur eine Ablagetafel und einen Krediteinheiten-Marker (startet auf $1).",
+      "botNoHomeWorld": "Bot bekommt zum Start <i>keine</i> Heimatwelt und <i>kein</i> Fraktionsplättchen.",
+      "botDrawTiles": "Bot zieht zu Beginn zwei Plättchen: platziere die Welt mit den geringeren Kosten als Welt in seiner Konstruktionszone (bei Gleichstand wähle selbst). Das andere Plättchen lege als Entwicklung in die Konstruktionszone."
+    },
     "modules": {
       "title": "Module",
       "objective": "Aufgaben-Modul (<i>Der große Traum</i>-Erweiterung)"
@@ -65,7 +72,7 @@
       "pickObjective": "Aufgabentafel wählen",
       "tilesLeft": "Wie viele Aufgabentafeln sind übrig?",
       "tiles": "Tafeln",
-      "picksTile": "Bot wählt Aufgabentafel Nummer <b>{tile}</b> und erählt die entsprechenden Leistungsmarker."
+      "picksTile": "Bot wählt Aufgabentafel Nummer <b>{tile}</b> und erhält die entsprechenden Leistungsmarker."
     }
   },
   "endGameScoring": {
@@ -74,11 +81,11 @@
     "bot": "Bot",
     "vpChips": "SP-Chips",
     "vpDevelopmentWorld": "Entwicklungen/Welten",
-    "vp6PlusWorlds": "6+ Welt-Bonus",
+    "vp6PlusBonus": "6+ Boni",
     "talentCounters": "Leistungsmarker",
     "total": "Summe",
     "vps": "SPs",
-    "difficulityLevel": "Schwierigkeitsgrad:",
+    "difficultyLevel": "Schwierigkeitsgrad:",
     "objectiveDifficultyLevel": "Aufgaben:"
   },
   "difficultyLevel": {

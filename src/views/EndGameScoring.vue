@@ -3,33 +3,33 @@
 
   <table aria-describedby="endGameScoringTitle">
     <tr>
-      <th></th>
-      <th>{{t('endGameScoring.player')}}</th>
-      <th>{{t('endGameScoring.bot')}}</th>
+      <th scope="col"></th>
+      <th scope="col">{{t('endGameScoring.player')}}</th>
+      <th scope="col">{{t('endGameScoring.bot')}}</th>
     </tr>
     <tr>
-      <th>{{t('endGameScoring.vpChips')}}</th>
+      <th scope="row">{{t('endGameScoring.vpChips')}}</th>
       <td><input type="number" min="0" max="99" step="1" v-model="playerVPChips" @focus="inputSelectAll"/></td>
       <td><input type="number" min="0" max="99" step="1" v-model="botVPChips" @focus="inputSelectAll"/></td>
     </tr>
     <tr>
-      <th>{{t('endGameScoring.vpDevelopmentWorld')}}</th>
+      <th scope="row">{{t('endGameScoring.vpDevelopmentWorld')}}</th>
       <td><input type="number" min="0" max="99" step="1" v-model="playerVPDevelopmentWorlds" @focus="inputSelectAll"/></td>
       <td><input type="number" min="0" max="99" step="1" v-model="botVPDevelopmentWorlds" @focus="inputSelectAll"/></td>
     </tr>
     <tr>
-      <th>{{t('endGameScoring.vp6PlusWorlds')}}</th>
+      <th scope="row">{{t('endGameScoring.vp6PlusWorlds')}}</th>
       <td><input type="number" min="0" max="99" step="1" v-model="playerVP6PlusWorlds" @focus="inputSelectAll"/></td>
       <td v-if="isProfessionalDifficultyLevel"><input type="number" min="0" max="99" step="1" v-model="botVP6PlusWorlds" @focus="inputSelectAll"/></td>
       <td v-else></td>
     </tr>
     <tr v-if="isObjectivesModule">
-      <th>{{t('endGameScoring.talentCounters')}}</th>
+      <th scope="row">{{t('endGameScoring.talentCounters')}}</th>
       <td><input type="number" min="0" max="99" step="1" v-model="playerTalentCounters" @focus="inputSelectAll"/></td>
       <td><input type="number" min="0" max="99" step="1" v-model="botTalentCounters" @focus="inputSelectAll"/></td>
     </tr>
     <tr>
-      <th>{{t('endGameScoring.total')}}</th>
+      <th scope="row">{{t('endGameScoring.total')}}</th>
       <td><b>{{totalPlayer}} {{t('endGameScoring.vps')}}</b></td>
       <td><b>{{totalBot}} {{t('endGameScoring.vps')}}</b></td>
     </tr>

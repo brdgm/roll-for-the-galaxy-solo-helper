@@ -20,8 +20,10 @@ import PhaseSelection from '@/components/round/PhaseSelection.vue'
 import NavigationState from '@/util/NavigationState'
 import getSelectedPhases from '@/util/getSelectedPhases'
 import Phase from '@/services/enum/Phase'
-import ObjectiveDifficultyLevel from '@/services/enum/ObjectiveDifficultyLevel'
 import rollDice from 'brdgm-commons/src/util/random/rollDice'
+import Module from '@/services/enum/Module'
+import getObjectiveDiceRoll from '@/util/getObjectiveDiceRoll'
+import getObjectiveMaxCount from '@/util/getObjectiveMaxCount'
 
 export default defineComponent({
   name: 'RoundPhaseSelection',
@@ -59,22 +61,14 @@ export default defineComponent({
       const round : Round = {round: this.round, playerPhase, botPhases}
 
       // check if objective is gained - limit to max. 2
-      const gainedObjectives = this.state.rounds.filter(item => item.round < this.round && item.objectiveGain).length
-      if (gainedObjectives < 2) {
-        let objectiveDice
-        switch (this.state.setup.objectiveDifficultyLevel) {
-          case ObjectiveDifficultyLevel.HARD_D8:
-            objectiveDice = 8
-            break
-          case ObjectiveDifficultyLevel.INSANE_D6:
-            objectiveDice = 6
-            break
-          default:
-            objectiveDice = 10
-            break
-        }
-        if (rollDice(objectiveDice) == 1) {
-          round.objectiveGain = true
+      if (this.state.setup.modules.includes(Module.OBJECTIVE)) {
+        const gainedObjectives = this.state.rounds.filter(item => item.round < this.round && item.objectiveGain).length
+        const objectiveDiceRoll = getObjectiveDiceRoll(this.state.setup.objectiveDifficultyLevel)
+        const objectiveMaxCount = getObjectiveMaxCount(this.state.setup.objectiveDifficultyLevel)
+        if (gainedObjectives < objectiveMaxCount) {
+          if (rollDice(objectiveDiceRoll) == 1) {
+            round.objectiveGain = true
+          }
         }
       }
 

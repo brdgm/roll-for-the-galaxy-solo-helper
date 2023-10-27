@@ -101,9 +101,9 @@
     "4": "Güter für 3/4/5/6 SPs verbrauchen, 6+-Wertungen berücksichtigen"
   },
   "objectiveDifficultyLevel": {
-    "1": "Normal (1 aus 10-Wahrscheinlichkeit eine Aufgabe zu erfüllen)",
-    "2": "Schwer (1 aus 8-Wahrscheinlichkeit eine Aufgabe zu erfüllen)",
-    "3": "Wahnwitzig (1 aus 6-Wahrscheinlichkeit eine Aufgabe zu erfüllen)"
+    "1": "Normal (1 aus 10-Wahrscheinlichkeit eine Aufgabe zu erfüllen, max. 2)",
+    "2": "Schwer (1 aus 8-Wahrscheinlichkeit eine Aufgabe zu erfüllen, max. 2)",
+    "3": "Wahnwitzig (1 aus 6-Wahrscheinlichkeit eine Aufgabe zu erfüllen, max. 2)"
   },
   "notfound": {
     "title": "Nicht gefunden"

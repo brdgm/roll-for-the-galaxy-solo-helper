@@ -13,7 +13,7 @@
       "setup2Players": "Baue das Spiel für 2 Spieler auf.",
       "botPlayerMat": "Bot benötigt nur eine Ablagetafel und einen Krediteinheiten-Marker (startet auf $1).",
       "botNoHomeWorld": "Bot bekommt zum Start <i>keine</i> Heimatwelt und <i>kein</i> Fraktionsplättchen.",
-      "botDrawTiles": "Bot zieht zu Beginn zwei Plättchen: platziere die Welt mit den geringeren Kosten als Welt in seiner Konstruktionszone (bei Gleichstand wähle selbst). Das andere Plättchen lege als Entwicklung in die Konstruktionszone."
+      "botDrawTiles": "Bot zieht zu Beginn zwei Plättchen: platziere die Welt mit den geringeren Kosten als Welt in seiner Konstruktionszone (bei Gleichstand wähle selbst). Das andere Plättchen lege als Entwicklung in die Konstruktionszone. Wenn Bot eine graue Startwelt gezogen hat, tausche sie durch ein anderes Plättchen aus."
     },
     "modules": {
       "title": "Module",

@@ -13,7 +13,7 @@
       "setup2Players": "Setup the game for 2 players.",
       "botPlayerMat": "Bot only needs a player mat and a credit marker (starting at $1).",
       "botNoHomeWorld": "Bot does <i>not</i> start with a Home World or Faction tile.",
-      "botDrawTiles": "Bot randomly draws 2 tiles: first, place the lower cost world in his construction zone (you decide which one if equal), then the other tile as a development."
+      "botDrawTiles": "Bot randomly draws 2 tiles: first, place the lower cost world in his construction zone (you decide which one if equal), then the other tile as a development. If Bot drew a gray starting world, replace it with a different tile."
     },
     "modules": {
       "title": "Modules",

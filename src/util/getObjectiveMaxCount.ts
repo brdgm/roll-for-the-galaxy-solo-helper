@@ -14,6 +14,6 @@ export default function (objectiveDifficultyLevel : ObjectiveDifficultyLevel) : 
     case ObjectiveDifficultyLevel.INSANE_D6:
       return 4
     default:
-      throw new Error(`Unexpected difficulty level: ${ObjectiveDifficultyLevel}`)
+      throw new Error(`Unexpected difficulty level: ${objectiveDifficultyLevel}`)
   }
 }

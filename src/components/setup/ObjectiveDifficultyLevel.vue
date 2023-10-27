@@ -15,7 +15,8 @@
   </div>  
   <div class="row">
     <div class="col-11 offset-1">
-      <i>{{t('objectiveDifficultyLevel.' + objectiveDifficultyLevel)}}</i>
+      <i>{{t('objectiveDifficultyLevel.' + objectiveDifficultyLevel,
+          {diceRoll:getDiceRoll(objectiveDifficultyLevel),maxCount:getMaxCount(objectiveDifficultyLevel)})}}</i>
     </div>
   </div>
 
@@ -25,6 +26,9 @@
 import { defineComponent, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useStateStore } from '@/store/state'
+import getObjectiveDiceRoll from '@/util/getObjectiveDiceRoll'
+import getObjectiveMaxCount from '@/util/getObjectiveMaxCount'
+import ObjectiveDifficultyLevelEnum from "@/services/enum/ObjectiveDifficultyLevel";
 
 export default defineComponent({
   name: 'ObjectiveDifficultyLevel',
@@ -38,6 +42,12 @@ export default defineComponent({
     updateDifficultyLevel(event: Event) {
       this.objectiveDifficultyLevel = parseInt((event.target as HTMLInputElement).value)
       this.state.setup.objectiveDifficultyLevel = this.objectiveDifficultyLevel
+    },
+    getDiceRoll(objectiveDifficultyLevel : ObjectiveDifficultyLevelEnum) : number {
+      return getObjectiveDiceRoll(objectiveDifficultyLevel)
+    },
+    getMaxCount(objectiveDifficultyLevel : ObjectiveDifficultyLevelEnum) : number {
+      return getObjectiveMaxCount(objectiveDifficultyLevel)
     }
   }
 })

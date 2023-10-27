@@ -3,7 +3,7 @@ import ProduceDiceType from '@/services/enum/ProduceDiceType'
 import getConsumeVPs from '@/util/getConsumeVPs'
 import { expect } from 'chai'
 
-describe('util/getTradeValue', () => {
+describe('util/getConsumeVPs', () => {
   it('NORMAL', () => {
     const difficultyLevel = DifficultyLevel.NORMAL
     expect(getConsumeVPs(ProduceDiceType.NOVELTY, difficultyLevel)).to.eq(2)

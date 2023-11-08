@@ -96,7 +96,14 @@ export default defineComponent({
       this.$emit('next')
     },
     notPossible() {
-      this.alternativeBotPhase = getAlternativeBotPhase(this.selectedBotPhase)
+      if (this.navigationState.botPhases.includes(this.navigationState.selectedPhase ?? Phase.EXPLORE)) {
+        // switch to alternative phase if this phase was selected by bot
+        this.alternativeBotPhase = getAlternativeBotPhase(this.selectedBotPhase)
+      }
+      else {
+        // otherwise, if phase was selected by human, action is forfeit
+        this.$emit('next')
+      }
     }
   }
 })

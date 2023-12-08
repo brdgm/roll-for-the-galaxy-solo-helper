@@ -117,6 +117,7 @@
     "abortGameConfirm": "Das aktuelle Spiel wird abgebrochen - bist Du sicher?",
     "endGame": "Spiel beenden",
     "endGameConfirm": "Dieses Spiel wird beendet - bist Du sicher?",
+    "endGameGoToScoringConfirm": "Spiel beenden und zur Punkteauswertung gehen?",
     "cancel": "Abbrechen",
     "backToHome": "Zurück zum Anfang",
     "back": "Zurück",

@@ -117,6 +117,7 @@
     "abortGameConfirm": "Aborting the running game - are you sure?",
     "endGame": "End Game",
     "endGameConfirm": "End this game and return to home screen - are you sure?",
+    "endGameGoToScoringConfirm": "End this game and go to scoring screen?",
     "cancel": "Cancel",
     "backToHome": "Back to Home",
     "back": "Back",

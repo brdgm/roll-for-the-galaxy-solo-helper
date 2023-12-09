@@ -39,7 +39,8 @@
     {{t('endGameScoring.difficultyLevel')}} <b>{{t(`difficultyLevel.${state.setup.difficultyLevel}`)}}</b>
     <span v-if="isObjectivesModule">
       <br/>
-      {{t('endGameScoring.objectiveDifficultyLevel')}} <b>{{t(`objectiveDifficultyLevel.${state.setup.objectiveDifficultyLevel}`)}}</b>
+      {{t('endGameScoring.objectiveDifficultyLevel')}} <b>{{t(`objectiveDifficultyLevel.${state.setup.objectiveDifficultyLevel}`,
+          {diceRoll:getDiceRoll(state.setup.objectiveDifficultyLevel),maxCount:getMaxCount(state.setup.objectiveDifficultyLevel)})}}</b>
     </span>
   </p>
 
@@ -53,6 +54,9 @@ import FooterButtons from '@/components/structure/FooterButtons.vue'
 import { useStateStore } from '@/store/state'
 import Module from '@/services/enum/Module'
 import DifficultyLevel from '@/services/enum/DifficultyLevel'
+import getObjectiveMaxCount from '@/util/getObjectiveMaxCount'
+import getObjectiveDiceRoll from '@/util/getObjectiveDiceRoll'
+import ObjectiveDifficultyLevelEnum from "@/services/enum/ObjectiveDifficultyLevel";
 
 export default defineComponent({
   name: 'EndGameScoring',
@@ -94,6 +98,12 @@ export default defineComponent({
     inputSelectAll(event: Event) : void {
       const input = event.target as HTMLInputElement
       input.select()
+    },
+    getDiceRoll(objectiveDifficultyLevel : ObjectiveDifficultyLevelEnum) : number {
+      return getObjectiveDiceRoll(objectiveDifficultyLevel)
+    },
+    getMaxCount(objectiveDifficultyLevel : ObjectiveDifficultyLevelEnum) : number {
+      return getObjectiveMaxCount(objectiveDifficultyLevel)
     }
   }
 })

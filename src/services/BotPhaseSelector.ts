@@ -1,5 +1,5 @@
 import randomEnum from 'brdgm-commons/src/util/random/randomEnum'
-import Phase from './enum/Phase';
+import Phase from './enum/Phase'
 
 /**
  * Selects phases for the bot.

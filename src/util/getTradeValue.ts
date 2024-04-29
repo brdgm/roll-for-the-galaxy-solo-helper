@@ -1,4 +1,4 @@
-import ProduceDiceType from "@/services/enum/ProduceDiceType";
+import ProduceDiceType from '@/services/enum/ProduceDiceType'
 
 /**
  * Get trade value for product.

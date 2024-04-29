@@ -1,4 +1,4 @@
-import ObjectiveDifficultyLevel from "@/services/enum/ObjectiveDifficultyLevel";
+import ObjectiveDifficultyLevel from '@/services/enum/ObjectiveDifficultyLevel'
 
 /**
  * Simulates Dx per difficulty level to gain an objective per round.

@@ -1,4 +1,4 @@
-import Phase from "@/services/enum/Phase";
+import Phase from '@/services/enum/Phase'
 
 /**
  * Get alternative phase for bot to try next if current phase is not possible.

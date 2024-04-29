@@ -1,5 +1,5 @@
-import DifficultyLevel from "@/services/enum/DifficultyLevel";
-import ProduceDiceType from "@/services/enum/ProduceDiceType";
+import DifficultyLevel from '@/services/enum/DifficultyLevel'
+import ProduceDiceType from '@/services/enum/ProduceDiceType'
 
 /**
  * Get VPs for consuming product.

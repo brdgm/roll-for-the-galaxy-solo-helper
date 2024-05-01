@@ -16,7 +16,7 @@ import { defineComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Module from '@/services/enum/Module'
 import { useStateStore } from '@/store/state'
-import toggleArrayItem from 'brdgm-commons/src/util/array/toggleArrayItem'
+import toggleArrayItem from '@brdgm/brdgm-commons/src/util/array/toggleArrayItem'
 
 export default defineComponent({
   name: 'ModuleSetup',

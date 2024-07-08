@@ -1,4 +1,4 @@
-import ObjectiveDifficultyLevel from "@/services/enum/ObjectiveDifficultyLevel";
+import ObjectiveDifficultyLevel from '@/services/enum/ObjectiveDifficultyLevel'
 
 /**
  * Max count of objectives per difficulty level.

@@ -1,8 +1,8 @@
-import DifficultyLevel from "@/services/enum/DifficultyLevel"
-import Phase from "@/services/enum/Phase"
-import { State } from "@/store/state"
-import { RouteLocation } from "vue-router"
-import getSelectedPhases from "./getSelectedPhases"
+import DifficultyLevel from '@/services/enum/DifficultyLevel'
+import Phase from '@/services/enum/Phase'
+import { State } from '@/store/state'
+import { RouteLocation } from 'vue-router'
+import getSelectedPhases from './getSelectedPhases'
 
 export default class NavigationState {
 

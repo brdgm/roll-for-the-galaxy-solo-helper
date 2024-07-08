@@ -56,7 +56,7 @@ import Module from '@/services/enum/Module'
 import DifficultyLevel from '@/services/enum/DifficultyLevel'
 import getObjectiveMaxCount from '@/util/getObjectiveMaxCount'
 import getObjectiveDiceRoll from '@/util/getObjectiveDiceRoll'
-import ObjectiveDifficultyLevelEnum from "@/services/enum/ObjectiveDifficultyLevel";
+import ObjectiveDifficultyLevelEnum from '@/services/enum/ObjectiveDifficultyLevel'
 
 export default defineComponent({
   name: 'EndGameScoring',

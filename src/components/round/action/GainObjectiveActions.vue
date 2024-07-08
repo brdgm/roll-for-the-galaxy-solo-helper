@@ -22,10 +22,10 @@
 </template>
 
 <script lang="ts">
-import ModalDialog from 'brdgm-commons/src/components/structure/ModalDialog.vue'
+import ModalDialog from '@brdgm/brdgm-commons/src/components/structure/ModalDialog.vue'
 import { defineComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
-import rollDice from 'brdgm-commons/src/util/random/rollDice'
+import rollDice from '@brdgm/brdgm-commons/src/util/random/rollDice'
 
 export default defineComponent({
   name: 'GainObjectiveActions',

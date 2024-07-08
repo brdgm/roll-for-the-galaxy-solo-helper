@@ -1,0 +1,133 @@
+{
+  "gameTitle": "Roll for the Galaxy",
+  "home": {
+    "title": "Roll for the Galaxy Solo Helper",
+    "play1": "Gioca <a href='https://boardgamegeek.com/boardgame/132531/roll-galaxy' target='_blank' rel='noopener'><b>Roll for the Galaxy</b></a> contro un Bot con le regole non ufficiali <a href='https://boardgamegeek.com/filepage/124323/solo-rules-rftg-amibtion' target='_blank' rel='noopener'><b>Solo Mode</b></a> di Dale Buonocore e Ken Thibodeau.",
+    "play2": "Puoi utilizzare il gioco base, oppure includere le tessere aggiuntive e i dadi delle espansioni <i>Ambition</i> o <i>Rivalry</i>. Tra i moduli opzionali &#xE9; supportato solo il modulo <i>Obiettivi</i> (<i>Objectives</i>) dell'espansione <i>Ambition</i>.",
+    "feedback": "Discussioni e Commenti:"
+  },
+  "setup": {
+    "title": "Preparazione del Gioco",
+    "general": {
+      "title": "Preparazione",
+      "setup2Players": "Prepara il gioco per 2 giocatori.",
+      "botPlayerMat": "Il Bot necessita solo di una plancia giocatore e del segnalino crediti (con il valore iniziale di $1).",
+      "botNoHomeWorld": "Il Bot <i>non</i> inizia con un Pianeta Iniziale (<i>Home World</i>) o una tessera Fazione (<i>Faction tile</i>).",
+      "botDrawTiles": "Il Bot pesca 2 tessere a caso: prima piazza il pianeta con il costo minore nella propria zona costruzione (in caso abbiano lo stesso valore decide il giocatore), poi posizione l'altra tessera come miglioramento. Se il Bot pesca un pianeta di partenza grigio, sostituiscilo con una tessera diversa."
+    },
+    "modules": {
+      "title": "Moduli",
+      "objective": "Modulo Obiettivi (espansione <i>Ambition</i>)"
+    },
+    "difficultyLevel": {
+      "title": "Livello di Difficoltà",
+      "easy": "Facile",
+      "hard": "Difficile"
+    },
+    "objectiveDifficultyLevel": {
+      "title": "Livello di Difficoltà per gli Obiettivi",
+      "easy": "Facile",
+      "hard": "Difficile"
+    }
+  },
+  "roundPhaseSelection": {
+    "title": "Round {round}",
+    "pickPhase": "Scegli la fase che hai selezionato.",
+    "playerSelected": "Giocatore:",
+    "botSelected": "Bot:"
+  },
+  "roundPhaseExecution": {
+    "title": "Round {round}",
+    "botActions": "Azioni del Bot:",
+    "completed": "Azioni del Bot completetate",
+    "notPossible": "Non eseguibile",
+    "exploreActions": {
+      "drawTile": "Il Bot <b>pesca 1 tessera</b>, la posizione come pianeta o miglioramento in fondo alla pila di costruzione che contiene meno tessere. In caso di parit&#xE0; posizionala come pianeta.",
+      "earnMoney": "Il Bot <b>guadagna ${amount}.</b>"
+    },
+    "developActions": {
+      "completeDevelopment": "Il Bot <b>completa il miglioramento in cima alla pila</b> se ha crediti sufficienti per coprire il costo.",
+      "notes": "Il Bot spende crediti al posto dei lavoratori. Il Bot <i>non beneficia di alcun bonus</i> ottenuto grazie ai miglioramenti. Serviranno solo come PV alla fine della partita."
+    },
+    "settleActions": {
+      "completeWorld": "Il Bot <b>completa il pianeta in cima alla pila</b> pagamendo un ammontare di crediti pari al valore del pianeta, se ne ha a sufficienza per coprire il costo.",
+      "notes": "Il Bot spende crediti al posto dei lavoratori. Il Bot <i>non ottiene nuovi dadi</i> e <i>non beneficia di alcun bonus</i> ottenuto grazie ai pianeti. Serviranno solo come PV alla fine della partita."
+    },
+    "produceActions": {
+      "produceWorlds": "Il Bot <b>produce sul migliore</b> dei pianeti a sua disposizione. | Il Bot <b>produce sui {amount} migliori</b> pianeti a sua disposizione.",
+      "priority": "Priorità:",
+      "notes": "Prendi un dado dalla riserva da usare come merce prodotta."
+    },
+    "shipActions": {
+      "tradeFirst": "Il Bot prima <b>vende la merce con il valore più alto</b> per ottenere crediti (fino al massimo di 10$).",
+      "consumeNext": "Il Bot poi <b>consuma la merce successiva con il valore più alto</b> (se disponibile) per guadagnare PV. Se il Bot dispone già di $10, consuma entrambe le merci.",
+      "tradeOnly": "Il Bot <b>vende la merce con il più valore alto</b> per crediti (fino al massimo di 10$). Se il Bot dispone già di $10,, consuma la merce con il successivo valore maggiore, o una qualsiasi delle merci di cui dispone.",
+      "priority": "Priorità",
+      "tradeValue": "Valore di vendita",
+      "botConsumes": "Il Bot consuma",
+      "vps": "PV"
+    },
+    "gainObjectiveActions": {
+      "gainObjective": "Il Bot soddisfa un <b>obiettivo non reclamato</b>!",
+      "pickObjective": "Scelta della tessera obiettivo",
+      "tilesLeft": "Quante tessere obiettivo sono rimaste?",
+      "tiles": "tessere ",
+      "picksTile": "Il Bot sceglie la tessera numero <b>{tile}</b> e guadagna segnalini talento di conseguenza."
+    }
+  },
+  "endGameScoring": {
+    "title": "Fine della partita",
+    "player": "Giocatore",
+    "bot": "Bot",
+    "vpChips": "Gettoni PV",
+    "vpDevelopmentWorld": "Miglioramenti/Pianeti",
+    "vp6PlusBonus": "Bonus 6+",
+    "talentCounters": "Segnalini Talento",
+    "total": "Totale",
+    "vps": "PV",
+    "difficultyLevel": "Difficoltà:",
+    "objectiveDifficultyLevel": "Obiettivi:"
+  },
+  "difficultyLevel": {
+    "1": "Level 1 - Normale",
+    "2": "Level 2 - Avanzato",
+    "3": "Level 3 - Esperto",
+    "4": "Level 4 - Professionista"
+  },
+  "difficultyLevelExplanation": {
+    "1": "Consuma merci per 2/2/3/3 PV",
+    "2": "Consuma merci per 2/3/4/5 PV",
+    "3": "Consuma merci per 3/4/5/6 PV",
+    "4": "Consuma merci per 3/4/5/6 PV, conteggia anche i bonus 6+"
+  },
+  "objectiveDifficultyLevel": {
+    "1": "Normale (Probabilità di 1 su {diceRoll} di soddisfare un obiettivo, max. {maxCount})",
+    "2": "Difficile (Probabilità di 1 su {diceRoll} di soddisfare un obiettivo, max. {maxCount})",
+    "3": "Assurdo (Probabilità di 1 su {diceRoll} di soddisfare un obiettivo, max. {maxCount})"
+  },
+  "notfound": {
+    "title": "Non Trovato"
+  },
+  "action": {
+    "playGame": "Gioca",
+    "startGame": "Inizia Partita",
+    "next": "Prossimo",
+    "nextRound": "Prossimo Round",
+    "abortGame": "Abbandona Partita",
+    "abortGameConfirm": "Stai per abbandonare la partita corrente - sei sicuro?",
+    "endGame": "Termina Partita",
+    "endGameConfirm": "Termina questa partita e torna alla pagina iniziale - sei sicuro?",
+    "endGameGoToScoringConfirm": "Termina la partita e vai al calcolo punteggio?",
+    "cancel": "Annulla",
+    "backToHome": "Torna alla Home",
+    "back": "Indietro",
+    "close": "Chiudi"
+  },
+  "footer": {
+    "credits": "Crediti"
+  },
+  "serviceWorkerUpdatedRefresh": {
+    "title": "Aggiorna Applicazione",
+    "notice": "L'applicazione è stata aggiornata - vuoi aggiornare la pagina per utilizzare l'ultima versione?"
+  }
+}

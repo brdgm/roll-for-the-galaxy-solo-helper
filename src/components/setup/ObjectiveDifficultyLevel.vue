@@ -28,7 +28,7 @@ import { useI18n } from 'vue-i18n'
 import { useStateStore } from '@/store/state'
 import getObjectiveDiceRoll from '@/util/getObjectiveDiceRoll'
 import getObjectiveMaxCount from '@/util/getObjectiveMaxCount'
-import ObjectiveDifficultyLevelEnum from "@/services/enum/ObjectiveDifficultyLevel";
+import ObjectiveDifficultyLevelEnum from '@/services/enum/ObjectiveDifficultyLevel'
 
 export default defineComponent({
   name: 'ObjectiveDifficultyLevel',

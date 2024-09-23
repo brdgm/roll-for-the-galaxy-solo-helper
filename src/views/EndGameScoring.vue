@@ -2,37 +2,39 @@
   <h1 id="endGameScoringTitle">{{t('endGameScoring.title')}}</h1>
 
   <table aria-describedby="endGameScoringTitle">
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">{{t('endGameScoring.player')}}</th>
-      <th scope="col">{{t('endGameScoring.bot')}}</th>
-    </tr>
-    <tr>
-      <th scope="row">{{t('endGameScoring.vpChips')}}</th>
-      <td><input type="number" min="0" max="99" step="1" v-model="playerVPChips" @focus="inputSelectAll"/></td>
-      <td><input type="number" min="0" max="99" step="1" v-model="botVPChips" @focus="inputSelectAll"/></td>
-    </tr>
-    <tr>
-      <th scope="row">{{t('endGameScoring.vpDevelopmentWorld')}}</th>
-      <td><input type="number" min="0" max="99" step="1" v-model="playerVPDevelopmentWorlds" @focus="inputSelectAll"/></td>
-      <td><input type="number" min="0" max="99" step="1" v-model="botVPDevelopmentWorlds" @focus="inputSelectAll"/></td>
-    </tr>
-    <tr>
-      <th scope="row">{{t('endGameScoring.vp6PlusBonus')}}</th>
-      <td><input type="number" min="0" max="99" step="1" v-model="playerVP6PlusWorlds" @focus="inputSelectAll"/></td>
-      <td v-if="isProfessionalDifficultyLevel"><input type="number" min="0" max="99" step="1" v-model="botVP6PlusWorlds" @focus="inputSelectAll"/></td>
-      <td v-else></td>
-    </tr>
-    <tr v-if="isObjectivesModule">
-      <th scope="row">{{t('endGameScoring.talentCounters')}}</th>
-      <td><input type="number" min="0" max="99" step="1" v-model="playerTalentCounters" @focus="inputSelectAll"/></td>
-      <td><input type="number" min="0" max="99" step="1" v-model="botTalentCounters" @focus="inputSelectAll"/></td>
-    </tr>
-    <tr>
-      <th scope="row">{{t('endGameScoring.total')}}</th>
-      <td><b>{{totalPlayer}} {{t('endGameScoring.vps')}}</b></td>
-      <td><b>{{totalBot}} {{t('endGameScoring.vps')}}</b></td>
-    </tr>
+    <tbody>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">{{t('endGameScoring.player')}}</th>
+        <th scope="col">{{t('endGameScoring.bot')}}</th>
+      </tr>
+      <tr>
+        <th scope="row">{{t('endGameScoring.vpChips')}}</th>
+        <td><input type="number" min="0" max="99" step="1" v-model="playerVPChips" @focus="inputSelectAll"/></td>
+        <td><input type="number" min="0" max="99" step="1" v-model="botVPChips" @focus="inputSelectAll"/></td>
+      </tr>
+      <tr>
+        <th scope="row">{{t('endGameScoring.vpDevelopmentWorld')}}</th>
+        <td><input type="number" min="0" max="99" step="1" v-model="playerVPDevelopmentWorlds" @focus="inputSelectAll"/></td>
+        <td><input type="number" min="0" max="99" step="1" v-model="botVPDevelopmentWorlds" @focus="inputSelectAll"/></td>
+      </tr>
+      <tr>
+        <th scope="row">{{t('endGameScoring.vp6PlusBonus')}}</th>
+        <td><input type="number" min="0" max="99" step="1" v-model="playerVP6PlusWorlds" @focus="inputSelectAll"/></td>
+        <td v-if="isProfessionalDifficultyLevel"><input type="number" min="0" max="99" step="1" v-model="botVP6PlusWorlds" @focus="inputSelectAll"/></td>
+        <td v-else></td>
+      </tr>
+      <tr v-if="isObjectivesModule">
+        <th scope="row">{{t('endGameScoring.talentCounters')}}</th>
+        <td><input type="number" min="0" max="99" step="1" v-model="playerTalentCounters" @focus="inputSelectAll"/></td>
+        <td><input type="number" min="0" max="99" step="1" v-model="botTalentCounters" @focus="inputSelectAll"/></td>
+      </tr>
+      <tr>
+        <th scope="row">{{t('endGameScoring.total')}}</th>
+        <td><b>{{totalPlayer}} {{t('endGameScoring.vps')}}</b></td>
+        <td><b>{{totalBot}} {{t('endGameScoring.vps')}}</b></td>
+      </tr>
+    </tbody>
   </table>
 
   <p class="mt-3">

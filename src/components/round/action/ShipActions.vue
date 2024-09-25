@@ -7,25 +7,27 @@
     <li v-html="t('roundPhaseExecution.shipActions.tradeOnly')"></li>
   </ul>
   <table aria-describedby="priorityCaption">
-    <tr>
-      <th id="priorityCaption">{{t('roundPhaseExecution.shipActions.priority')}}</th>
-      <td v-for="(produceDiceType, index) of produceDiceTypes" :key="produceDiceType">
-        <AppIcon type="produce-dice" :name="produceDiceType" extension="svg" class="diceIcon" />
-        <span v-if="index < produceDiceTypes.length - 1"> &nbsp;>&nbsp;</span>
-      </td>
-    </tr>
-    <tr>
-      <th>{{t('roundPhaseExecution.shipActions.tradeValue')}}</th>
-      <td v-for="produceDiceType of produceDiceTypes" :key="produceDiceType">
-        ${{getTradeValue(produceDiceType)}}
-      </td>
-    </tr>
-    <tr>
-      <th>{{t('roundPhaseExecution.shipActions.botConsumes')}}</th>
-      <td v-for="produceDiceType of produceDiceTypes" :key="produceDiceType">
-        {{getConsumeVPs(produceDiceType)}} {{t('roundPhaseExecution.shipActions.vps')}}
-      </td>
-    </tr>
+    <tbody>
+      <tr>
+        <th id="priorityCaption">{{t('roundPhaseExecution.shipActions.priority')}}</th>
+        <td v-for="(produceDiceType, index) of produceDiceTypes" :key="produceDiceType">
+          <AppIcon type="produce-dice" :name="produceDiceType" extension="svg" class="diceIcon" />
+          <span v-if="index < produceDiceTypes.length - 1"> &nbsp;>&nbsp;</span>
+        </td>
+      </tr>
+      <tr>
+        <th>{{t('roundPhaseExecution.shipActions.tradeValue')}}</th>
+        <td v-for="produceDiceType of produceDiceTypes" :key="produceDiceType">
+          ${{getTradeValue(produceDiceType)}}
+        </td>
+      </tr>
+      <tr>
+        <th>{{t('roundPhaseExecution.shipActions.botConsumes')}}</th>
+        <td v-for="produceDiceType of produceDiceTypes" :key="produceDiceType">
+          {{getConsumeVPs(produceDiceType)}} {{t('roundPhaseExecution.shipActions.vps')}}
+        </td>
+      </tr>
+    </tbody>
   </table>
 </template>
 

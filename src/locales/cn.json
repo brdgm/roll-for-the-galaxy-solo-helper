@@ -1,0 +1,133 @@
+{
+  "gameTitle": "银河竞骰",
+  "home": {
+    "title": "银河竞骰单人助手",
+    "play1": "使用非官方的<a href='https://boardgamegeek.com/filepage/124323/solo-rules-rftg-amibtion' target='_blank' rel='noopener'><b>单人模式</b></a>，由 Dale Buonocore 和 Ken Thibodeau 设计，与机器人对战<a href='https://boardgamegeek.com/boardgame/132531/roll-galaxy' target='_blank' rel='noopener'><b>银河竞骰</b></a>。",
+    "play2": "你可以使用基础游戏进行，也可以使用扩展 <i>Ambition</i> 或 <i>Rivalry</i> 中的所有额外板块和骰子。在可选模组中，仅支持 <i>Ambition</i> 扩展中的<i>目标</i>模组。",
+    "feedback": "讨论与反馈:"
+  },
+  "setup": {
+    "title": "游戏设置",
+    "general": {
+      "title": "设置",
+      "setup2Players": "按照2人游戏进行设置",
+      "botPlayerMat": "机器人只需要一张玩家面板和一个货币指示物 (起始为 $1)。",
+      "botNoHomeWorld": "机器人游戏开始时<i>没有</i>家园板块或派系板块。",
+      "botDrawTiles": "机器人随机拿取2个板块: 首先，将费用较低的星球放置在其建设区 (如果相同，由你决定哪一个)，然后将另一个板块作为设施。如果机器人抽到一个灰色的起始星球，则替换为另一个不同的板块。"
+    },
+    "modules": {
+      "title": "模组",
+      "objective": "目标模组 (<i>Ambition</i> 扩展)"
+    },
+    "difficultyLevel": {
+      "title": "难度等级",
+      "easy": "简单",
+      "hard": "困难"
+    },
+    "objectiveDifficultyLevel": {
+      "title": "目标难度等级",
+      "easy": "简单",
+      "hard": "困难"
+    }
+  },
+  "roundPhaseSelection": {
+    "title": "第 {round} 轮",
+    "pickPhase": "选择你所选的行动。",
+    "playerSelected": "玩家:",
+    "botSelected": "机器人:"
+  },
+  "roundPhaseExecution": {
+    "title": "第 {round} 轮",
+    "botActions": "机器人行动:",
+    "completed": "机器人行动完成",
+    "notPossible": "不可行",
+    "exploreActions": {
+      "drawTile": "机器人<b>拿取1个板块</b>，将其作为星球或设施放置在建设区中数量最少的堆叠的最底部。如果数量打平，则作为星球放置。",
+      "earnMoney": "机器人<b>获得${amount}。</b>"
+    },
+    "developActions": {
+      "completeDevelopment": "如果机器人有足够的货币支付费用，机器人<b>最顶部的设施开发完成</b>。",
+      "notes": "机器人使用货币而非开发者支付费用。机器人<b>不会通过设施获得任何奖励</b>，它们仅在游戏结束时记作分数。"
+    },
+    "settleActions": {
+      "completeWorld": "如果机器人有足够的货币，支付与星球费用相等的货币，机器人<b>最顶部的星球扩张完成</b>。",
+      "notes": "使用货币而非殖民者支付费用。机器人<b>不会获得新的骰子</b>，并且<b>不会通过星球获得任何奖励</b>，它们仅在游戏结束时记作分数。"
+    },
+    "produceActions": {
+      "produceWorlds": "机器人<b>在其{amount}个最高颜色</b>价值的可用星球上生产。 | 机器人<b>在其{amount}个最高颜色</b>价值的可用星球上生产。",
+      "priority": "优先级:",
+      "notes": "使用供应区中的任何骰子作为生产出的货物。"
+    },
+    "shipActions": {
+      "tradeFirst": "机器人首先<b>交易货物从最高颜色</b>价值的星球以获得太空货币 (不超过最大值 $10)。",
+      "consumeNext": "机器人然后<b>消费货物从下一个最高颜色</b>价值的星球 (如果有) 以获得分数。如果机器人已经有 $10，则消费两次。",
+      "tradeOnly": "机器人<b>交易货物从最高颜色</b>价值的星球以获得太空货币 (不超过最大值 $10)。如果机器人已经有 $10, 则改为消费货物从下一个最高颜色价值的星球，或其拥有的任意货物。",
+      "priority": "优先级",
+      "tradeValue": "交易价格",
+      "botConsumes": "机器人消费",
+      "vps": "VPs"
+    },
+    "gainObjectiveActions": {
+      "gainObjective": "机器人完成了一个<b>未被认领的目标</b>!",
+      "pickObjective": "选择目标板块",
+      "tilesLeft": "还剩多少个目标板块？",
+      "tiles": "板块",
+      "picksTile": "机器人选择了<b>{tile}</b>号板块，并相应地获得了天赋指示物。"
+    }
+  },
+  "endGameScoring": {
+    "title": "游戏结束",
+    "player": "玩家",
+    "bot": "机器人",
+    "vpChips": "分数标记",
+    "vpDevelopmentWorld": "设施/星球",
+    "vp6PlusBonus": "6+ 奖励",
+    "talentCounters": "天赋指示物",
+    "total": "总计",
+    "vps": "分数",
+    "difficultyLevel": "难度:",
+    "objectiveDifficultyLevel": "目标:"
+  },
+  "difficultyLevel": {
+    "1": "等级 1 - 普通",
+    "2": "等级 2 - 高级",
+    "3": "等级 3 - 专家",
+    "4": "等级 4 - 专业"
+  },
+  "difficultyLevelExplanation": {
+    "1": "消费货物获得 2/2/3/3 分",
+    "2": "消费货物获得 2/3/4/5 分",
+    "3": "消费货物获得 3/4/5/6 分",
+    "4": "消费货物获得 3/4/5/6 分，6费设施计分"
+  },
+  "objectiveDifficultyLevel": {
+    "1": "普通 (完成目标的概率为1/{diceRoll}，最多{maxCount}次)",
+    "2": "困难 (完成目标的概率为1/{diceRoll}，最多{maxCount}次)",
+    "3": "疯狂 (完成目标的概率为1/{diceRoll}，最多{maxCount}次)"
+  },
+  "notfound": {
+    "title": "未找到"
+  },
+  "action": {
+    "playGame": "进行游戏",
+    "startGame": "开始游戏",
+    "next": "下一步",
+    "nextRound": "下一轮",
+    "abortGame": "终止游戏",
+    "abortGameConfirm": "你确定要终止正在进行的游戏吗？",
+    "endGame": "结束游戏",
+    "endGameConfirm": "你确定要结束游戏并返回主界面吗？",
+    "endGameGoToScoringConfirm": "你确定要结束游戏并开始记分吗？",
+    "cancel": "取消",
+    "backToHome": "返回主界面",
+    "back": "返回",
+    "close": "关闭"
+  },
+  "footer": {
+    "credits": "致谢"
+  },
+  "serviceWorkerUpdatedRefresh": {
+    "title": "刷新应用",
+    "notice": "本应用已经更新，你是否希望刷新界面进入新版本？"
+  }
+}

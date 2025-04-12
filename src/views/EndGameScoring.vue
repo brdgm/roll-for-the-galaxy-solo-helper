@@ -10,24 +10,24 @@
       </tr>
       <tr>
         <th scope="row">{{t('endGameScoring.vpChips')}}</th>
-        <td><input type="number" min="0" max="99" step="1" v-model="playerVPChips" @focus="inputSelectAll"/></td>
-        <td><input type="number" min="0" max="99" step="1" v-model="botVPChips" @focus="inputSelectAll"/></td>
+        <td><ScoringTextInput v-model="playerVPChips"/></td>
+        <td><ScoringTextInput v-model="botVPChips"/></td>
       </tr>
       <tr>
         <th scope="row">{{t('endGameScoring.vpDevelopmentWorld')}}</th>
-        <td><input type="number" min="0" max="99" step="1" v-model="playerVPDevelopmentWorlds" @focus="inputSelectAll"/></td>
-        <td><input type="number" min="0" max="99" step="1" v-model="botVPDevelopmentWorlds" @focus="inputSelectAll"/></td>
+        <td><ScoringTextInput v-model="playerVPDevelopmentWorlds"/></td>
+        <td><ScoringTextInput v-model="botVPDevelopmentWorlds"/></td>
       </tr>
       <tr>
         <th scope="row">{{t('endGameScoring.vp6PlusBonus')}}</th>
-        <td><input type="number" min="0" max="99" step="1" v-model="playerVP6PlusWorlds" @focus="inputSelectAll"/></td>
-        <td v-if="isProfessionalDifficultyLevel"><input type="number" min="0" max="99" step="1" v-model="botVP6PlusWorlds" @focus="inputSelectAll"/></td>
+        <td><ScoringTextInput v-model="playerVP6PlusWorlds"/></td>
+        <td v-if="isProfessionalDifficultyLevel"><ScoringTextInput v-model="botVP6PlusWorlds"/></td>
         <td v-else></td>
       </tr>
       <tr v-if="isObjectivesModule">
         <th scope="row">{{t('endGameScoring.talentCounters')}}</th>
-        <td><input type="number" min="0" max="99" step="1" v-model="playerTalentCounters" @focus="inputSelectAll"/></td>
-        <td><input type="number" min="0" max="99" step="1" v-model="botTalentCounters" @focus="inputSelectAll"/></td>
+        <td><ScoringTextInput v-model="playerTalentCounters"/></td>
+        <td><ScoringTextInput v-model="botTalentCounters"/></td>
       </tr>
       <tr>
         <th scope="row">{{t('endGameScoring.total')}}</th>
@@ -59,11 +59,13 @@ import DifficultyLevel from '@/services/enum/DifficultyLevel'
 import getObjectiveMaxCount from '@/util/getObjectiveMaxCount'
 import getObjectiveDiceRoll from '@/util/getObjectiveDiceRoll'
 import ObjectiveDifficultyLevelEnum from '@/services/enum/ObjectiveDifficultyLevel'
+import ScoringTextInput from '@brdgm/brdgm-commons/src/components/form/ScoringTextInput.vue'
 
 export default defineComponent({
   name: 'EndGameScoring',
   components: {
-    FooterButtons
+    FooterButtons,
+    ScoringTextInput
   },
   setup() {
     const { t } = useI18n()
@@ -97,10 +99,6 @@ export default defineComponent({
     }
   },
   methods: {
-    inputSelectAll(event: Event) : void {
-      const input = event.target as HTMLInputElement
-      input.select()
-    },
     getDiceRoll(objectiveDifficultyLevel : ObjectiveDifficultyLevelEnum) : number {
       return getObjectiveDiceRoll(objectiveDifficultyLevel)
     },

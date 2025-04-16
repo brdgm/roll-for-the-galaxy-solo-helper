@@ -10,24 +10,24 @@
       </tr>
       <tr>
         <th scope="row">{{t('endGameScoring.vpChips')}}</th>
-        <td><ScoringTextInput v-model="playerVPChips"/></td>
-        <td><ScoringTextInput v-model="botVPChips"/></td>
+        <td><NumberInput v-model="playerVPChips"/></td>
+        <td><NumberInput v-model="botVPChips"/></td>
       </tr>
       <tr>
         <th scope="row">{{t('endGameScoring.vpDevelopmentWorld')}}</th>
-        <td><ScoringTextInput v-model="playerVPDevelopmentWorlds"/></td>
-        <td><ScoringTextInput v-model="botVPDevelopmentWorlds"/></td>
+        <td><NumberInput v-model="playerVPDevelopmentWorlds"/></td>
+        <td><NumberInput v-model="botVPDevelopmentWorlds"/></td>
       </tr>
       <tr>
         <th scope="row">{{t('endGameScoring.vp6PlusBonus')}}</th>
-        <td><ScoringTextInput v-model="playerVP6PlusWorlds"/></td>
-        <td v-if="isProfessionalDifficultyLevel"><ScoringTextInput v-model="botVP6PlusWorlds"/></td>
+        <td><NumberInput v-model="playerVP6PlusWorlds"/></td>
+        <td v-if="isProfessionalDifficultyLevel"><NumberInput v-model="botVP6PlusWorlds"/></td>
         <td v-else></td>
       </tr>
       <tr v-if="isObjectivesModule">
         <th scope="row">{{t('endGameScoring.talentCounters')}}</th>
-        <td><ScoringTextInput v-model="playerTalentCounters"/></td>
-        <td><ScoringTextInput v-model="botTalentCounters"/></td>
+        <td><NumberInput v-model="playerTalentCounters"/></td>
+        <td><NumberInput v-model="botTalentCounters"/></td>
       </tr>
       <tr>
         <th scope="row">{{t('endGameScoring.total')}}</th>
@@ -59,13 +59,14 @@ import DifficultyLevel from '@/services/enum/DifficultyLevel'
 import getObjectiveMaxCount from '@/util/getObjectiveMaxCount'
 import getObjectiveDiceRoll from '@/util/getObjectiveDiceRoll'
 import ObjectiveDifficultyLevelEnum from '@/services/enum/ObjectiveDifficultyLevel'
-import ScoringTextInput from '@brdgm/brdgm-commons/src/components/form/ScoringTextInput.vue'
+import NumberInput from '@brdgm/brdgm-commons/src/components/form/NumberInput.vue'
+import toNumber from '@brdgm/brdgm-commons/src/util/form/toNumber'
 
 export default defineComponent({
   name: 'EndGameScoring',
   components: {
     FooterButtons,
-    ScoringTextInput
+    NumberInput
   },
   setup() {
     const { t } = useI18n()
@@ -86,10 +87,10 @@ export default defineComponent({
   },
   computed: {
     totalPlayer() : number {
-      return this.playerVPChips + this.playerVPDevelopmentWorlds + this.playerVP6PlusWorlds + this.playerTalentCounters
+      return toNumber(this.playerVPChips) + toNumber(this.playerVPDevelopmentWorlds) + toNumber(this.playerVP6PlusWorlds) + toNumber(this.playerTalentCounters)
     },
     totalBot() : number {
-      return this.botVPChips + this.botVPDevelopmentWorlds + this.botVP6PlusWorlds + this.botTalentCounters
+      return toNumber(this.botVPChips) + toNumber(this.botVPDevelopmentWorlds) + toNumber(this.botVP6PlusWorlds) + toNumber(this.botTalentCounters)
     },
     isObjectivesModule() : boolean {
       return this.state.setup.modules.includes(Module.OBJECTIVE)

@@ -40,7 +40,7 @@ export default defineComponent({
   },
   methods: {
     updateDifficultyLevel(event: Event) {
-      this.objectiveDifficultyLevel = parseInt((event.target as HTMLInputElement).value)
+      this.objectiveDifficultyLevel = Number.parseInt((event.target as HTMLInputElement).value)
       this.state.setup.objectiveDifficultyLevel = this.objectiveDifficultyLevel
     },
     getDiceRoll(objectiveDifficultyLevel : ObjectiveDifficultyLevelEnum) : number {

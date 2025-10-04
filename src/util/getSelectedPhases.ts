@@ -6,7 +6,7 @@ import { Round } from '@/store/state'
  * @param roundData Round data
  * @returns Selected phases
  */
-export default function (roundData : Round) : Phase[] {
+export default function getSelectedPhases(roundData : Round) : Phase[] {
   return Object.values(Phase)
     .filter(phase => roundData.playerPhase == phase || roundData.botPhases.includes(phase))
 }

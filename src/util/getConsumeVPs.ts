@@ -6,7 +6,7 @@ import ProduceDiceType from '@/services/enum/ProduceDiceType'
  * @param produceDiceType Produce dice type
  * @returns VPs
  */
-export default function (produceDiceType : ProduceDiceType, difficultyLevel : DifficultyLevel) : number {
+export default function getConsumeVPs(produceDiceType : ProduceDiceType, difficultyLevel : DifficultyLevel) : number {
   switch (difficultyLevel) {
     case DifficultyLevel.NORMAL:
       switch (produceDiceType) {

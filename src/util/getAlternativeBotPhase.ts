@@ -5,7 +5,7 @@ import Phase from '@/services/enum/Phase'
  * @param currentPhase Current phase
  * @returns Alternative phase
  */
-export default function (currentPhase : Phase) : Phase {
+export default function getAlternativeBotPhase(currentPhase : Phase) : Phase {
   const phases = Object.values(Phase)
   const index = phases.indexOf(currentPhase)
   if (index == phases.length - 1) {

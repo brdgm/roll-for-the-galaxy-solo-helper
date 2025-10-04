@@ -5,7 +5,7 @@ import ProduceDiceType from '@/services/enum/ProduceDiceType'
  * @param produceDiceType Produce dice type
  * @returns Trade value in $
  */
-export default function (produceDiceType : ProduceDiceType) : number {
+export default function getTradeValue(produceDiceType : ProduceDiceType) : number {
   switch (produceDiceType) {
     case ProduceDiceType.NOVELTY:
       return 3

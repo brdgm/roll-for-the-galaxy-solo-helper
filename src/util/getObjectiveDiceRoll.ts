@@ -5,7 +5,7 @@ import ObjectiveDifficultyLevel from '@/services/enum/ObjectiveDifficultyLevel'
  * @param objectiveDifficultyLevel Difficulty Level
  * @returns Dice size
  */
-export default function (objectiveDifficultyLevel : ObjectiveDifficultyLevel) : number {
+export default function getObjectiveDiceRoll(objectiveDifficultyLevel : ObjectiveDifficultyLevel) : number {
   switch (objectiveDifficultyLevel) {
     case ObjectiveDifficultyLevel.NORMAL_D10:
       return 10

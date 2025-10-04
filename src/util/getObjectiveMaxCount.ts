@@ -5,7 +5,7 @@ import ObjectiveDifficultyLevel from '@/services/enum/ObjectiveDifficultyLevel'
  * @param objectiveDifficultyLevel Difficulty Level
  * @returns Max. number of objectives that can be gained
  */
-export default function (objectiveDifficultyLevel : ObjectiveDifficultyLevel) : number {
+export default function getObjectiveMaxCount(objectiveDifficultyLevel : ObjectiveDifficultyLevel) : number {
   switch (objectiveDifficultyLevel) {
     case ObjectiveDifficultyLevel.NORMAL_D10:
       return 2

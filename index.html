@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Roll for the Galaxy Solo Helper</title>
-    <meta name="description" content="Autobahn Solo Helper">
+    <meta name="description" content="Roll for the Galaxy Solo Helper">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="theme-color" content="#333">
     <meta charset="utf-8">
@@ -12,11 +12,13 @@
     <link rel="mask-icon" href="/img/icons/maskable-icon-512x512.png" color="#fff">
     <!-- Matomo Tracking: Cookie-less and GDPR-conformant -->
     <script>
-      var _paq = window._paq = window._paq || [];
+      var _paq = globalThis._paq = globalThis._paq || [];
       (function() {
         var u="//matomo.brdgm.me/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '2']);
+        _paq.push(
+          ['setTrackerUrl', u+'matomo.php'],
+          ['setSiteId', '2']
+        );
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
       })();

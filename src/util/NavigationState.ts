@@ -17,8 +17,8 @@ export default class NavigationState {
   constructor(route : RouteLocation, state : State) {    
     this.difficultyLevel = state.setup.difficultyLevel
 
-    this.round = parseInt(route.params['round'] as string)
-    this.phase = parseInt(route.params['phase'] as string)
+    this.round = Number.parseInt(route.params['round'] as string)
+    this.phase = Number.parseInt(route.params['phase'] as string)
 
     const roundData = state.rounds.find(item => item.round == this.round)
     if (roundData) {

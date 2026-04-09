@@ -54,7 +54,7 @@
       "notes": "Il Bot spende crediti al posto dei lavoratori. Il Bot <i>non ottiene nuovi dadi</i> e <i>non beneficia di alcun bonus</i> ottenuto grazie ai pianeti. Serviranno solo come PV alla fine della partita."
     },
     "produceActions": {
-      "produceWorlds": "Il Bot <b>produce sul migliore</b> dei pianeti a sua disposizione. | Il Bot <b>produce sui {amount} migliori</b> pianeti a sua disposizione.",
+      "produceWorlds": "Il Bot <b>produce sul {amount} migliore</b> dei pianeti a sua disposizione. | Il Bot <b>produce sui {amount} migliori</b> pianeti a sua disposizione.",
       "priority": "Priorità:",
       "notes": "Prendi un dado dalla riserva da usare come merce prodotta."
     },

@@ -2,8 +2,8 @@
   "gameTitle": "Roll for the Galaxy",
   "home": {
     "title": "Roll for the Galaxy Solo Helper",
-    "play1": "Spiele <a href='https://boardgamegeek.com/boardgame/132531/roll-galaxy' target='_blank' rel='noopener'><b>Roll for the Galaxy</b></a> gegen einen Bot mit dem inoffiziellen <a href='https://boardgamegeek.com/filepage/124323/solo-rules-rftg-amibtion' target='_blank' rel='noopener'><b>Solo-Modus</b></a> von Dale Buonocore and Ken Thibodeau.",
-    "play2": "Du kannst mit dem Grundspiel spielen, oder die zusätzlichen Plättchen und Würfel der Erweiterungen <i>Der große Traum</i> und <i>Große Konkurrenz</i> hinzufügen. Von den optionalen Modulen wird nur das <i>Aufgaben</i>-Moduls aus <i>Der große Traum</i> unterstützt.",
+    "play1": "Spiele <a href='https://boardgamegeek.com/boardgame/132531/roll-galaxy' target='_blank' rel='noopener'><b>Roll for the Galaxy</b></a> gegen einen Bot mit dem inoffiziellen <a href='https://boardgamegeek.com/filepage/124323/solo-rules-rftg-amibtion' target='_blank' rel='noopener'><b>Solo-Modus</b></a> von Dale Buonocore und Ken Thibodeau.",
+    "play2": "Du kannst mit dem Grundspiel spielen, oder die zusätzlichen Plättchen und Würfel der Erweiterungen <i>Der große Traum</i> und <i>Große Konkurrenz</i> hinzufügen. Von den optionalen Modulen wird nur das <i>Aufgaben</i>-Modul aus <i>Der große Traum</i> unterstützt.",
     "feedback": "Discussion and Feedback:"
   },
   "setup": {
@@ -61,7 +61,7 @@
     "shipActions": {
       "tradeFirst": "Bot <b>handelt ein Gut von der wertvollsten Welt</b> gegen Krediteinheiten (bis zum Maximum von 10$).",
       "consumeNext": "Anschließend <b>verbraucht er das Gut von der zweitwertvollsten Welt</b> (wenn verfügbar) für Siegpunkte. Wenn Bot bereits $10 hat, verbraucht er zweimal.",
-      "tradeOnly": "Bot <b>handelt ein Gut von der wertvollsten Welt</b> gegen Krediteinheiten (bis zum Maximum von 10$). Wenn Bot bereits $10 hat, verbraucht er anstelle ein Gut von der zweitwertvollsten Welt bzw. irgendein verfügbares Gut.",
+      "tradeOnly": "Bot <b>handelt ein Gut von der wertvollsten Welt</b> gegen Krediteinheiten (bis zum Maximum von 10$). Wenn Bot bereits $10 hat, verbraucht er stattdessen ein Gut von der zweitwertvollsten Welt bzw. irgendein verfügbares Gut.",
       "priority": "Priorität",
       "tradeValue": "Handelsertrag",
       "botConsumes": "Bot verbraucht",
